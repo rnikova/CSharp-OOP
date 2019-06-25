@@ -1,0 +1,11 @@
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P05_GreedyTimes\bin\Debug\netcoreapp2.0\P05_GreedyTimes.deps.json
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P05_GreedyTimes\bin\Debug\netcoreapp2.0\P05_GreedyTimes.runtimeconfig.json
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P05_GreedyTimes\bin\Debug\netcoreapp2.0\P05_GreedyTimes.runtimeconfig.dev.json
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P05_GreedyTimes\bin\Debug\netcoreapp2.0\P05_GreedyTimes.dll
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P05_GreedyTimes\bin\Debug\netcoreapp2.0\P05_GreedyTimes.pdb
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P05_GreedyTimes\obj\Debug\netcoreapp2.0\P05_GreedyTimes.csprojAssemblyReference.cache
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P05_GreedyTimes\obj\Debug\netcoreapp2.0\P05_GreedyTimes.csproj.CoreCompileInputs.cache
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P05_GreedyTimes\obj\Debug\netcoreapp2.0\P05_GreedyTimes.AssemblyInfoInputs.cache
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P05_GreedyTimes\obj\Debug\netcoreapp2.0\P05_GreedyTimes.AssemblyInfo.cs
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P05_GreedyTimes\obj\Debug\netcoreapp2.0\P05_GreedyTimes.dll
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P05_GreedyTimes\obj\Debug\netcoreapp2.0\P05_GreedyTimes.pdb

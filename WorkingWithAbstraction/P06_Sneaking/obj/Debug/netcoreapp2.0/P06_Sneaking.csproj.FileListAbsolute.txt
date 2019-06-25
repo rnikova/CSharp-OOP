@@ -1,0 +1,11 @@
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P06_Sneaking\bin\Debug\netcoreapp2.0\P06_Sneaking.deps.json
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P06_Sneaking\bin\Debug\netcoreapp2.0\P06_Sneaking.runtimeconfig.json
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P06_Sneaking\bin\Debug\netcoreapp2.0\P06_Sneaking.runtimeconfig.dev.json
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P06_Sneaking\bin\Debug\netcoreapp2.0\P06_Sneaking.dll
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P06_Sneaking\bin\Debug\netcoreapp2.0\P06_Sneaking.pdb
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P06_Sneaking\obj\Debug\netcoreapp2.0\P06_Sneaking.csprojAssemblyReference.cache
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P06_Sneaking\obj\Debug\netcoreapp2.0\P06_Sneaking.csproj.CoreCompileInputs.cache
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P06_Sneaking\obj\Debug\netcoreapp2.0\P06_Sneaking.AssemblyInfoInputs.cache
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P06_Sneaking\obj\Debug\netcoreapp2.0\P06_Sneaking.AssemblyInfo.cs
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P06_Sneaking\obj\Debug\netcoreapp2.0\P06_Sneaking.dll
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P06_Sneaking\obj\Debug\netcoreapp2.0\P06_Sneaking.pdb

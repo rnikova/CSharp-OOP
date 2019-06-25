@@ -1,0 +1,11 @@
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P07_FamilyTree\bin\Debug\netcoreapp2.0\P07_FamilyTree.deps.json
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P07_FamilyTree\bin\Debug\netcoreapp2.0\P07_FamilyTree.runtimeconfig.json
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P07_FamilyTree\bin\Debug\netcoreapp2.0\P07_FamilyTree.runtimeconfig.dev.json
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P07_FamilyTree\bin\Debug\netcoreapp2.0\P07_FamilyTree.dll
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P07_FamilyTree\bin\Debug\netcoreapp2.0\P07_FamilyTree.pdb
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P07_FamilyTree\obj\Debug\netcoreapp2.0\P07_FamilyTree.csprojAssemblyReference.cache
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P07_FamilyTree\obj\Debug\netcoreapp2.0\P07_FamilyTree.csproj.CoreCompileInputs.cache
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P07_FamilyTree\obj\Debug\netcoreapp2.0\P07_FamilyTree.AssemblyInfoInputs.cache
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P07_FamilyTree\obj\Debug\netcoreapp2.0\P07_FamilyTree.AssemblyInfo.cs
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P07_FamilyTree\obj\Debug\netcoreapp2.0\P07_FamilyTree.dll
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P07_FamilyTree\obj\Debug\netcoreapp2.0\P07_FamilyTree.pdb
