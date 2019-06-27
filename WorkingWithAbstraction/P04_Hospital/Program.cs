@@ -8,47 +8,43 @@ namespace P04_Hospital
     {
         public static void Main()
         {
-            Dictionary<string, List<string>> doktori = new Dictionary<string, List<string>>();
+            Dictionary<string, List<string>> doctors = new Dictionary<string, List<string>>();
             Dictionary<string, List<List<string>>> departments = new Dictionary<string, List<List<string>>>();
 
+            List<Department> hospital = new List<Department>();
 
             string command = Console.ReadLine();
+
             while (command != "Output")
             {
                 string[] jetoni = command.Split();
-                var departament = jetoni[0];
-                var purvoIme = jetoni[1];
-                var vtoroIme = jetoni[2];
-                var pacient = jetoni[3];
-                var cqloIme = purvoIme + vtoroIme;
+                var departmentName = jetoni[0];
+                var patient = jetoni[3];
+                var doctor = jetoni[1] + jetoni[2];
 
-                if (!doktori.ContainsKey(purvoIme + vtoroIme))
+                Department department = new Department(departmentName, doctor);
+
+                if (department.Patients.Count <= 60)
                 {
-                    doktori[cqloIme] = new List<string>();
-                }
-                if (!departments.ContainsKey(departament))
-                {
-                    departments[departament] = new List<List<string>>();
-                    for (int stai = 0; stai < 20; stai++)
-                    {
-                        departments[departament].Add(new List<string>());
-                    }
+                    department.AddPatient(patient);
                 }
 
-                bool imaMqsto = departments[departament].SelectMany(x => x).Count() < 60;
-                if (imaMqsto)
+                hospital.Add(department);       
+
+                bool hasRoom = departments[departmentName].SelectMany(x => x).Count() < 60;
+                if (hasRoom)
                 {
-                    int staq = 0;
-                    doktori[cqloIme].Add(pacient);
-                    for (int st = 0; st < departments[departament].Count; st++)
+                    int room = 0;
+                    doctors[doctor].Add(patient);
+                    for (int st = 0; st < departments[departmentName].Count; st++)
                     {
-                        if (departments[departament][st].Count < 3)
+                        if (departments[departmentName][st].Count < 3)
                         {
-                            staq = st;
+                            room = st;
                             break;
                         }
                     }
-                    departments[departament][staq].Add(pacient);
+                    departments[departmentName][room].Add(patient);
                 }
 
                 command = Console.ReadLine();
@@ -70,7 +66,7 @@ namespace P04_Hospital
                 }
                 else
                 {
-                    Console.WriteLine(string.Join("\n", doktori[args[0] + args[1]].OrderBy(x => x)));
+                    Console.WriteLine(string.Join("\n", doctors[args[0] + args[1]].OrderBy(x => x)));
                 }
                 command = Console.ReadLine();
             }
