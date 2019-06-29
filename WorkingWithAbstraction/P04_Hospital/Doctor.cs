@@ -4,16 +4,16 @@ using System.Text;
 
 namespace P04Hospital
 {
-    public class Department
+    public class Doctor
     {
-        public Department(string name)
+        public Doctor(string name)
         {
             this.Name = name;
-            this.Rooms = new List<Room>();
+            this.Patients = new List<string>();
         }
 
         public string Name { get; set; }
 
-        public List<Room> Rooms { get; set; }
+        public List<string> Patients { get; set; }
     }
 }

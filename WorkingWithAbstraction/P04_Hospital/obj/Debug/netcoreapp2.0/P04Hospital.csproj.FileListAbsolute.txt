@@ -1,0 +1,11 @@
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P04_Hospital\bin\Debug\netcoreapp2.0\P04Hospital.deps.json
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P04_Hospital\bin\Debug\netcoreapp2.0\P04Hospital.runtimeconfig.json
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P04_Hospital\bin\Debug\netcoreapp2.0\P04Hospital.runtimeconfig.dev.json
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P04_Hospital\bin\Debug\netcoreapp2.0\P04Hospital.dll
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P04_Hospital\bin\Debug\netcoreapp2.0\P04Hospital.pdb
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P04_Hospital\obj\Debug\netcoreapp2.0\P04Hospital.csprojAssemblyReference.cache
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P04_Hospital\obj\Debug\netcoreapp2.0\P04Hospital.csproj.CoreCompileInputs.cache
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P04_Hospital\obj\Debug\netcoreapp2.0\P04Hospital.AssemblyInfoInputs.cache
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P04_Hospital\obj\Debug\netcoreapp2.0\P04Hospital.AssemblyInfo.cs
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P04_Hospital\obj\Debug\netcoreapp2.0\P04Hospital.dll
+D:\SoftUni\CSharp-OOP\WorkingWithAbstraction\P04_Hospital\obj\Debug\netcoreapp2.0\P04Hospital.pdb

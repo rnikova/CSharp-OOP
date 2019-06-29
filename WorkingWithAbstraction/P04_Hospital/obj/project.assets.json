@@ -682,9 +682,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SoftUni\\CSharp-OOP\\WorkingWithAbstraction\\P04_Hospital\\P04_Hospital.csproj",
-      "projectName": "P04_Hospital",
-      "projectPath": "D:\\SoftUni\\CSharp-OOP\\WorkingWithAbstraction\\P04_Hospital\\P04_Hospital.csproj",
+      "projectUniqueName": "D:\\SoftUni\\CSharp-OOP\\WorkingWithAbstraction\\P04_Hospital\\P04Hospital.csproj",
+      "projectName": "P04Hospital",
+      "projectPath": "D:\\SoftUni\\CSharp-OOP\\WorkingWithAbstraction\\P04_Hospital\\P04Hospital.csproj",
       "packagesPath": "C:\\Users\\Rosmari\\.nuget\\packages\\",
       "outputPath": "D:\\SoftUni\\CSharp-OOP\\WorkingWithAbstraction\\P04_Hospital\\obj\\",
       "projectStyle": "PackageReference",
