@@ -8,8 +8,10 @@ namespace P05_GreedyTimes
     {
         static List<Jewel> bag;
         static Item item;
+        static int index = -1;
+        static string type = string.Empty;
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             long capacity = long.Parse(Console.ReadLine());
             string[] quantityPair = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
@@ -19,36 +21,20 @@ namespace P05_GreedyTimes
             bag.Add(new Jewel("Gem"));
             bag.Add(new Jewel("Cash"));
 
-            int index = -1;
 
             for (int i = 0; i < quantityPair.Length; i += 2)
             {
                 string typeOfItem = quantityPair[i];
                 long quantityItem = long.Parse(quantityPair[i + 1]);
 
-                string type = string.Empty;
-
-                if (typeOfItem.Length == 3)
-                {
-                    type = "Cash";
-                    index = 2;
-                }
-                else if (typeOfItem.ToLower().EndsWith("gem") && typeOfItem.Length >= 4)
-                {
-                    type = "Gem";
-                    index = 1;
-                }
-                else if (typeOfItem.ToLower() == "gold")
-                {
-                    type = "Gold";
-                    index = 0;
-                }
+                CheckType(typeOfItem);
 
                 if (type == "")
                 {
                     continue;
                 }
-                else if (capacity < bag.Sum(x => x.Jewels.Sum(y => y.Amount)) + quantityItem)
+
+                if (capacity < bag.Sum(x => x.Sum()) + quantityItem)
                 {
                     continue;
                 }
@@ -69,15 +55,28 @@ namespace P05_GreedyTimes
             }
         }
 
+        private static void CheckType(string typeOfItem)
+        {
+            if (typeOfItem.Length == 3)
+            {
+                type = "Cash";
+                index = 2;
+            }
+            else if (typeOfItem.ToLower().EndsWith("gem"))
+            {
+                type = "Gem";
+                index = 1;
+            }
+            else if (typeOfItem.ToLower() == "gold")
+            {
+                type = "Gold";
+                index = 0;
+            }
+        }
+
         private static Jewel CheckContainsJewel(string type, string typeOfItem, long quantityItem)
         {
             Jewel currentJewel = bag.FirstOrDefault(x => x.Name == type);
-
-            if (currentJewel == null)
-            {
-                currentJewel = new Jewel(type);
-                bag.Add(currentJewel);
-            }
 
             Item currentItem = currentJewel.Jewels.FirstOrDefault(x => x.ItemName == typeOfItem);
 
@@ -90,25 +89,24 @@ namespace P05_GreedyTimes
                 IncreaceJewels(currentItem, quantityItem, currentJewel);
             }
 
-
             return currentJewel;
         }
 
         private static void IncreaceJewels(Item currentItem, long quantityItem, Jewel currentJewel)
         {
             if (currentJewel.Name == "Gold" &&
-                    bag[0].Jewels.Sum(x => x.Amount) + quantityItem >= bag[1].Jewels.Sum(y => y.Amount))
+                    bag[0].Sum() + quantityItem >= bag[1].Sum())
             {
                 currentItem.Amount += quantityItem;
             }
             else if (currentJewel.Name == "Gem" &&
-                bag[2].Jewels.Sum(x => x.Amount) + quantityItem >= bag[2].Jewels.Sum(y => y.Amount) &&
-                bag[2].Jewels.Sum(x => x.Amount) + quantityItem < bag[0].Jewels.Sum(y => y.Amount))
+                bag[1].Sum() + quantityItem >= bag[2].Sum() &&
+                bag[1].Sum() + quantityItem < bag[0].Sum())
             {
                 currentItem.Amount += quantityItem;
             }
             else if (currentJewel.Name == "Cash" &&
-                bag[2].Jewels.Sum(x => x.Amount) + quantityItem <= bag[1].Jewels.Sum(y => y.Amount))
+                bag[2].Sum() + quantityItem < bag[1].Sum())
             {
                 currentItem.Amount += quantityItem;
             }
@@ -117,18 +115,18 @@ namespace P05_GreedyTimes
         private static void AddJewels(Jewel currentJewel, long quantityItem)
         {
             if (currentJewel.Name == "Gold" &&
-                    bag[0].Jewels.Sum(x => x.Amount) + quantityItem >= bag[1].Jewels.Sum(y => y.Amount))
+                    bag[0].Sum() + quantityItem >= bag[1].Sum())
             {
                 currentJewel.Jewels.Add(item);
             }
             else if (currentJewel.Name == "Gem" &&
-                bag[2].Jewels.Sum(x => x.Amount) + quantityItem >= bag[2].Jewels.Sum(y => y.Amount) &&
-                bag[2].Jewels.Sum(x => x.Amount) + quantityItem < bag[0].Jewels.Sum(y => y.Amount))
+                bag[1].Sum() + quantityItem >= bag[2].Sum() &&
+                bag[2].Sum() + quantityItem < bag[0].Sum())
             {
                 currentJewel.Jewels.Add(item);
             }
             else if (currentJewel.Name == "Cash" &&
-                bag[2].Jewels.Sum(x => x.Amount) + quantityItem <= bag[1].Jewels.Sum(y => y.Amount))
+                bag[2].Sum() + quantityItem <= bag[1].Sum())
             {
                 currentJewel.Jewels.Add(item);
             }

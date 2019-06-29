@@ -1,42 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 public class Person
 {
-    private string name;
-    private string birthday;
-    private List<Person> parents;
-    private List<Person> children;
-
     public Person()
     {
         this.Children = new List<Person>();
         this.Parents = new List<Person>();
     }
 
-    public string Name
+    public string Name { get; set; }
+
+    public string Birthday { get; set; }
+
+    public List<Person> Parents { get; set; }
+
+    public List<Person> Children { get; set; }
+
+    private static bool IsBirthday(string input)
     {
-        get { return name; }
-        set { name = value; }
+        return char.IsDigit(input[0]);
     }
 
-    public string Birthday
+    public static Person CreatePerson(string personInput)
     {
-        get { return birthday; }
-        set { birthday = value; }
-    }
+        Person person = new Person();
 
-    public List<Person> Parents
-    {
-        get { return parents; }
-        set { parents = value; }
-    }
+        if (IsBirthday(personInput))
+        {
+            person.Birthday = personInput;
+        }
+        else
+        {
+            person.Name = personInput;
+        }
 
-    public List<Person> Children
-    {
-        get { return children; }
-        set { children = value; }
+        return person;
     }
 
     public override string ToString()

@@ -9,12 +9,17 @@ namespace P05_GreedyTimes
     {
         public Jewel(string name)
         {
-            this.Name = name;//cash
-            this.Jewels = new List<Item>();//usd 300, bgn 400
+            this.Name = name;
+            this.Jewels = new List<Item>();
         }
 
         public string Name { get; set; }
 
         public List<Item> Jewels { get; set; }
+
+        public long Sum()
+        {
+            return this.Jewels.Sum(x => x.Amount);
+        }
     }
 }
