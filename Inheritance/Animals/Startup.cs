@@ -1,16 +1,15 @@
 ﻿namespace Animals
 {
-    using global::Animals.Animals;
     using System;
     using System.Collections.Generic;
 
-    public class Startup
+    public class StartUp
     {
-        static List<Animal> animals = new List<Animal>();
 
         public static void Main(string[] args)
         {
             string input = Console.ReadLine();
+            List<Animal> animals = new List<Animal>();
 
 
             while (input != "Beast!")
@@ -54,10 +53,10 @@
                 input = Console.ReadLine();
             }
 
-            Print();
+            Print(animals);
         }
 
-        private static void Print()
+        private static void Print(List<Animal> animals)
         {
             foreach (var animal in animals)
             {

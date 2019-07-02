@@ -3,9 +3,9 @@ D:\SoftUni\CSharp-OOP\Inheritance\Animals\bin\Debug\netcoreapp2.1\Animals.runtim
 D:\SoftUni\CSharp-OOP\Inheritance\Animals\bin\Debug\netcoreapp2.1\Animals.runtimeconfig.dev.json
 D:\SoftUni\CSharp-OOP\Inheritance\Animals\bin\Debug\netcoreapp2.1\Animals.dll
 D:\SoftUni\CSharp-OOP\Inheritance\Animals\bin\Debug\netcoreapp2.1\Animals.pdb
-D:\SoftUni\CSharp-OOP\Inheritance\Animals\obj\Debug\netcoreapp2.1\Animals.csprojAssemblyReference.cache
 D:\SoftUni\CSharp-OOP\Inheritance\Animals\obj\Debug\netcoreapp2.1\Animals.csproj.CoreCompileInputs.cache
 D:\SoftUni\CSharp-OOP\Inheritance\Animals\obj\Debug\netcoreapp2.1\Animals.AssemblyInfoInputs.cache
 D:\SoftUni\CSharp-OOP\Inheritance\Animals\obj\Debug\netcoreapp2.1\Animals.AssemblyInfo.cs
 D:\SoftUni\CSharp-OOP\Inheritance\Animals\obj\Debug\netcoreapp2.1\Animals.dll
 D:\SoftUni\CSharp-OOP\Inheritance\Animals\obj\Debug\netcoreapp2.1\Animals.pdb
+D:\SoftUni\CSharp-OOP\Inheritance\Animals\obj\Debug\netcoreapp2.1\Animals.csprojAssemblyReference.cache
