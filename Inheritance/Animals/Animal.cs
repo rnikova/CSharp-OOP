@@ -59,9 +59,9 @@
             }
         }
 
-        public virtual void ProduceSound()
+        public virtual string ProduceSound()
         {
-            Console.WriteLine("");
+            return "";
         }
 
         public override string ToString()

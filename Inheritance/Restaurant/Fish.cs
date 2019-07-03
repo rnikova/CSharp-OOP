@@ -2,12 +2,10 @@
 {
     public class Fish : Food
     {
-        public Fish(string name, decimal price, double grams, decimal fishGrams) 
+        public Fish(string name, decimal price, double grams) 
             : base(name, price, grams)
         {
-            this.FishGrams = 22.0m;
+            this.Grams = 22.0;
         }
-
-        public decimal FishGrams { get; set; }
     }
 }

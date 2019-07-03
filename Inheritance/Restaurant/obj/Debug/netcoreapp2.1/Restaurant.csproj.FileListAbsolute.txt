@@ -8,3 +8,4 @@ D:\SoftUni\CSharp-OOP\Inheritance\Restaurant\obj\Debug\netcoreapp2.1\Restaurant.
 D:\SoftUni\CSharp-OOP\Inheritance\Restaurant\obj\Debug\netcoreapp2.1\Restaurant.AssemblyInfo.cs
 D:\SoftUni\CSharp-OOP\Inheritance\Restaurant\obj\Debug\netcoreapp2.1\Restaurant.dll
 D:\SoftUni\CSharp-OOP\Inheritance\Restaurant\obj\Debug\netcoreapp2.1\Restaurant.pdb
+D:\SoftUni\CSharp-OOP\Inheritance\Restaurant\obj\Debug\netcoreapp2.1\Restaurant.csprojAssemblyReference.cache
