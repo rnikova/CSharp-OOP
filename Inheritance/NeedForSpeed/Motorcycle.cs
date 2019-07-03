@@ -2,8 +2,8 @@
 {
     public class Motorcycle : Vehicle
     {
-        public Motorcycle(double fuelConsumption, double fuel, int horsePower) 
-            : base(fuelConsumption, fuel, horsePower)
+        public Motorcycle(int horsePower, double fuel) 
+            : base(horsePower, fuel)
         {
         }
     }

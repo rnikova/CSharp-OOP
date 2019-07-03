@@ -2,12 +2,13 @@
 {
     public class SportCar : Car
     {
-        private const double defaultConsumption = 10.0;
+        private double defaultConsumption = 10.0;
 
-        public SportCar(double fuelConsumption, double fuel, int horsePower) 
-            : base(fuelConsumption, fuel, horsePower)
+        public SportCar(int horsePower, double fuel) 
+            : base(horsePower, fuel)
         {
-            this.DefaultFuelConsumption = defaultConsumption;
+            base.DefaultFuelConsumption = this.FuelConsumption;
         }
+        protected override double FuelConsumption { get => defaultConsumption; set => defaultConsumption = value; }
     }
 }

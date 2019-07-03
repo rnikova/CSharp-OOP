@@ -2,19 +2,25 @@
 {
     public class Vehicle
     {
-        private const double defaultConsumption = 1.25;
+        private double defaultFuelConsumption = 1.25;
 
-        public Vehicle(double fuelConsumption, double fuel, int horsePower)
+        public Vehicle(int horsePower, double fuel)
         {
-            this.DefaultFuelConsumption = defaultConsumption;
-            this.FuelConsumption = fuelConsumption;
-            this.Fuel = fuel;
+            this.DefaultFuelConsumption = FuelConsumption;
             this.HorsePower = horsePower;
+            this.Fuel = fuel;
         }
 
-        public double DefaultFuelConsumption { get; set; }
+        protected double DefaultFuelConsumption
+        {
+            get => defaultFuelConsumption;
+            set
+            {
+                defaultFuelConsumption = value;
+            }
+        }
 
-        public virtual double FuelConsumption { get; set; }
+        protected virtual double FuelConsumption { get; set; }
 
         public double Fuel { get; set; }
 
@@ -22,7 +28,7 @@
 
         public virtual void Drive(double kilometers)
         {
-            this.Fuel -= defaultConsumption * kilometers;
+            this.Fuel -= this.FuelConsumption * kilometers;
         }
     }
 }
