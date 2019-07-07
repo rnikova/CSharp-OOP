@@ -8,14 +8,12 @@ namespace ShoppingSpree
     {
         private string name;
         private decimal money;
-        private List<Person> people;
 
         public Person(string name, decimal money)
         {
             this.Name = name;
             this.Money = money;
-            this.Bag = new List<Product>();
-            this.people = new List<Person>();
+            this.Bag = new List<string>();
         }
 
         public string Name
@@ -40,6 +38,19 @@ namespace ShoppingSpree
             }
         }
 
-        private List<Product> Bag { get; set; }
+        public List<string> Bag { get; set; }
+
+        public string BuyProduct(Product currentProduct)
+        {
+            if (this.Money >= currentProduct.Price)
+            {
+                this.Bag.Add(currentProduct.Name);
+                this.Money -= currentProduct.Price;
+
+                return $"{this.Name} bought {currentProduct.Name}";
+            }
+
+            return $"{this.Name} can't afford {currentProduct.Name}";
+        }
     }
 }
