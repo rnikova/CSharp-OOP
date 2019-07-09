@@ -1,12 +1,21 @@
-﻿using System;
-
-namespace FootballTeamGenerator
+﻿namespace FootballTeamGenerator
 {
-    class Program
+    using System;
+
+    public class StartUp
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            
+            try
+            {
+
+
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }

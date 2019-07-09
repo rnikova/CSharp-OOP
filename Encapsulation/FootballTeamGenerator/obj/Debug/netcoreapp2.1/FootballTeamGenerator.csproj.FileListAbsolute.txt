@@ -1,0 +1,11 @@
+D:\SoftUni\CSharp-OOP\Encapsulation\FootballTeamGenerator\bin\Debug\netcoreapp2.1\FootballTeamGenerator.deps.json
+D:\SoftUni\CSharp-OOP\Encapsulation\FootballTeamGenerator\bin\Debug\netcoreapp2.1\FootballTeamGenerator.runtimeconfig.json
+D:\SoftUni\CSharp-OOP\Encapsulation\FootballTeamGenerator\bin\Debug\netcoreapp2.1\FootballTeamGenerator.runtimeconfig.dev.json
+D:\SoftUni\CSharp-OOP\Encapsulation\FootballTeamGenerator\bin\Debug\netcoreapp2.1\FootballTeamGenerator.dll
+D:\SoftUni\CSharp-OOP\Encapsulation\FootballTeamGenerator\bin\Debug\netcoreapp2.1\FootballTeamGenerator.pdb
+D:\SoftUni\CSharp-OOP\Encapsulation\FootballTeamGenerator\obj\Debug\netcoreapp2.1\FootballTeamGenerator.csprojAssemblyReference.cache
+D:\SoftUni\CSharp-OOP\Encapsulation\FootballTeamGenerator\obj\Debug\netcoreapp2.1\FootballTeamGenerator.csproj.CoreCompileInputs.cache
+D:\SoftUni\CSharp-OOP\Encapsulation\FootballTeamGenerator\obj\Debug\netcoreapp2.1\FootballTeamGenerator.AssemblyInfoInputs.cache
+D:\SoftUni\CSharp-OOP\Encapsulation\FootballTeamGenerator\obj\Debug\netcoreapp2.1\FootballTeamGenerator.AssemblyInfo.cs
+D:\SoftUni\CSharp-OOP\Encapsulation\FootballTeamGenerator\obj\Debug\netcoreapp2.1\FootballTeamGenerator.dll
+D:\SoftUni\CSharp-OOP\Encapsulation\FootballTeamGenerator\obj\Debug\netcoreapp2.1\FootballTeamGenerator.pdb

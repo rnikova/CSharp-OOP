@@ -6,7 +6,6 @@
     public class Player
     {
         private string name;
-        private Stat stat;
 
         public Player(string name, Stat stat)
         {

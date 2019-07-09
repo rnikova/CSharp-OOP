@@ -37,7 +37,7 @@
         {
             this.players.Add(player);
         }
-        public void RemovePlayer(Player player)
+        public void RemovePlayer(string name)
         {
             Player playerToRemove = this.players.FirstOrDefault(x => x.Name == name);
 
@@ -47,6 +47,11 @@
             }
 
             this.players.Remove(playerToRemove);
+        }
+
+        public override string ToString()
+        {
+            return $"{this.Name} - {this.Rating}";
         }
     }
 }
