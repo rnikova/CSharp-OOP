@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FootballTeamGenerator
 {
-    class Team
+    class Engine
     {
     }
 }

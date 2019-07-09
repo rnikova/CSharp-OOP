@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FootballTeamGenerator
+namespace FootballTeamGenerator.Exeption
 {
-    class Player
+    class Messages
     {
     }
 }
