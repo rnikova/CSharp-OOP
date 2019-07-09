@@ -1,21 +1,11 @@
 ﻿namespace FootballTeamGenerator
 {
-    using System;
-
     public class StartUp
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
-            try
-            {
-
-
-            }
-            catch (Exception ex)
-            {
-
-                Console.WriteLine(ex.Message);
-            }
+            Engine engine = new Engine();
+            engine.Run();
         }
     }
 }

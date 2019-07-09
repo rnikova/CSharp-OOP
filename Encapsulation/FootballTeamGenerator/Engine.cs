@@ -46,7 +46,7 @@
 
                         Stat stat = new Stat(endurance, sprint, dribble, passing, shooting);
                         Player player = new Player(playerName, stat);
-                        Team team = this.teams.First(x => x.Name == teamName);
+                        Team team = this.teams.FirstOrDefault(x => x.Name == teamName);
                         team.AddPlayer(player);
 
                     }
@@ -55,7 +55,7 @@
                         ValidateTeamName(teamName);
 
                         string playerName = commandTokens[2];
-                        Team team = this.teams.First(x => x.Name == teamName);
+                        Team team = this.teams.FirstOrDefault(x => x.Name == teamName);
 
                         team.RemovePlayer(playerName);
                     }
@@ -63,7 +63,7 @@
                     {
                         ValidateTeamName(teamName);
 
-                        Team team = this.teams.First(x => x.Name == teamName);
+                        Team team = this.teams.FirstOrDefault(x => x.Name == teamName);
 
                         Console.WriteLine(team.ToString());
                     }
@@ -80,7 +80,9 @@
 
         private void ValidateTeamName(string name)
         {
-            if (string.IsNullOrWhiteSpace(name))
+            Team team = this.teams.FirstOrDefault(x => x.Name == name);
+
+            if (team == null)
             {
                 throw new ArgumentException(string.Format(ExeptionMessages.MissingTeamExeption, name));
             }

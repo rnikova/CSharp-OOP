@@ -30,7 +30,7 @@
             {
                 ValidateStat(value, nameof(this.Endurance));
 
-                this.Endurance = value;
+                this.endurance = value;
             }
         }
 
@@ -41,7 +41,7 @@
             {
                 ValidateStat(value, nameof(this.Sprint));
 
-                this.Sprint = value;
+                this.sprint = value;
             }
         }
 
@@ -52,7 +52,7 @@
             {
                 ValidateStat(value, nameof(this.Dribble));
 
-                this.Dribble = value;
+                this.dribble = value;
             }
         }
 
@@ -63,7 +63,7 @@
             {
                 ValidateStat(value, nameof(this.Passing));
 
-                this.Passing = value;
+                this.passing = value;
             }
         }
 
@@ -74,7 +74,7 @@
             {
                 ValidateStat(value, nameof(this.Shooting));
 
-                this.Shooting = value;
+                this.shooting = value;
             }
         }
 
