@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ShoppingSpree
+﻿namespace ShoppingSpree
 {
     public class Product
     {

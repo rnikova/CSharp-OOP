@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace ShoppingSpree
 {
@@ -8,12 +8,13 @@ namespace ShoppingSpree
     {
         private string name;
         private decimal money;
+        private List<Product> bag;
 
         public Person(string name, decimal money)
         {
             this.Name = name;
             this.Money = money;
-            this.Bag = new List<string>();
+            this.bag = new List<Product>();
         }
 
         public string Name
@@ -38,19 +39,27 @@ namespace ShoppingSpree
             }
         }
 
-        public List<string> Bag { get; set; }
-
-        public string BuyProduct(Product currentProduct)
+        public void BuyProduct(Product currentProduct)
         {
-            if (this.Money >= currentProduct.Price)
-            {
-                this.Bag.Add(currentProduct.Name);
-                this.Money -= currentProduct.Price;
+            decimal currentMoney = this.Money - currentProduct.Price;
 
-                return $"{this.Name} bought {currentProduct.Name}";
+            if (currentMoney < 0)
+            {
+                throw new InvalidOperationException($"{this.Name} can't afford {currentProduct.Name}");
             }
 
-            return $"{this.Name} can't afford {currentProduct.Name}";
+            this.Money = currentMoney;
+            this.bag.Add(currentProduct);
+        }
+
+        public override string ToString()
+        {
+            if (this.bag.Count > 0)
+            {
+                return $"{this.Name} - {string.Join(", ", this.bag.Select(x=>x.Name))}";
+            }
+
+            return $"{this.Name} - Nothing bought";
         }
     }
 }

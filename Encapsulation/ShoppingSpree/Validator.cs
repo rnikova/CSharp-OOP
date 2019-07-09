@@ -8,9 +8,9 @@ namespace ShoppingSpree
     {
         public static void ValidateName(string name)
         {
-            if (string.IsNullOrEmpty(name) || string.IsNullOrWhiteSpace(name))
+            if (string.IsNullOrWhiteSpace(name))
             {
-                throw new Exception("Name cannot be empty");
+                throw new ArgumentException("Name cannot be empty");
             }
         }
 
@@ -18,7 +18,7 @@ namespace ShoppingSpree
         {
             if (money < 0)
             {
-                throw new Exception("Money cannot be negative");
+                throw new ArgumentException("Money cannot be negative");
             }
         }
     }
