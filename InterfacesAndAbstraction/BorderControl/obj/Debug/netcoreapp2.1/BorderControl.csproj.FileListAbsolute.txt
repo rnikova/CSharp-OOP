@@ -1,0 +1,10 @@
+D:\SoftUni\CSharp-OOP\InterfacesAndAbstraction\BorderControl\bin\Debug\netcoreapp2.1\BorderControl.deps.json
+D:\SoftUni\CSharp-OOP\InterfacesAndAbstraction\BorderControl\bin\Debug\netcoreapp2.1\BorderControl.runtimeconfig.json
+D:\SoftUni\CSharp-OOP\InterfacesAndAbstraction\BorderControl\bin\Debug\netcoreapp2.1\BorderControl.runtimeconfig.dev.json
+D:\SoftUni\CSharp-OOP\InterfacesAndAbstraction\BorderControl\bin\Debug\netcoreapp2.1\BorderControl.dll
+D:\SoftUni\CSharp-OOP\InterfacesAndAbstraction\BorderControl\bin\Debug\netcoreapp2.1\BorderControl.pdb
+D:\SoftUni\CSharp-OOP\InterfacesAndAbstraction\BorderControl\obj\Debug\netcoreapp2.1\BorderControl.csproj.CoreCompileInputs.cache
+D:\SoftUni\CSharp-OOP\InterfacesAndAbstraction\BorderControl\obj\Debug\netcoreapp2.1\BorderControl.AssemblyInfoInputs.cache
+D:\SoftUni\CSharp-OOP\InterfacesAndAbstraction\BorderControl\obj\Debug\netcoreapp2.1\BorderControl.AssemblyInfo.cs
+D:\SoftUni\CSharp-OOP\InterfacesAndAbstraction\BorderControl\obj\Debug\netcoreapp2.1\BorderControl.dll
+D:\SoftUni\CSharp-OOP\InterfacesAndAbstraction\BorderControl\obj\Debug\netcoreapp2.1\BorderControl.pdb
