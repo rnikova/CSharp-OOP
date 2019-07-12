@@ -1,12 +1,13 @@
-﻿using System;
+﻿using MilitaryElite.Core;
 
 namespace MilitaryElite
 {
-    class Program
+    public class StartUp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Engine engine = new Engine();
+            engine.Run();
         }
     }
 }
