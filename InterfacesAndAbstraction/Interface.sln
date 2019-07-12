@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ferrari", "Ferrari\Ferrari.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Telephony", "Telephony\Telephony.csproj", "{69FCD126-8991-4078-9235-1EC020F29239}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BorderControl", "BorderControl\BorderControl.csproj", "{8D6B3386-579F-462C-BB0E-E6C1399D0193}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BorderControl", "BorderControl\BorderControl.csproj", "{8D6B3386-579F-462C-BB0E-E6C1399D0193}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilitaryElite", "MilitaryElite\MilitaryElite.csproj", "{20E71E3E-5686-4CDF-867E-4E95B24AA8E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{8D6B3386-579F-462C-BB0E-E6C1399D0193}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D6B3386-579F-462C-BB0E-E6C1399D0193}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D6B3386-579F-462C-BB0E-E6C1399D0193}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20E71E3E-5686-4CDF-867E-4E95B24AA8E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20E71E3E-5686-4CDF-867E-4E95B24AA8E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20E71E3E-5686-4CDF-867E-4E95B24AA8E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20E71E3E-5686-4CDF-867E-4E95B24AA8E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

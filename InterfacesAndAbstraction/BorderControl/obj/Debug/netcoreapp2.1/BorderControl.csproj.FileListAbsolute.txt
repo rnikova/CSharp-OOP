@@ -8,3 +8,4 @@ D:\SoftUni\CSharp-OOP\InterfacesAndAbstraction\BorderControl\obj\Debug\netcoreap
 D:\SoftUni\CSharp-OOP\InterfacesAndAbstraction\BorderControl\obj\Debug\netcoreapp2.1\BorderControl.AssemblyInfo.cs
 D:\SoftUni\CSharp-OOP\InterfacesAndAbstraction\BorderControl\obj\Debug\netcoreapp2.1\BorderControl.dll
 D:\SoftUni\CSharp-OOP\InterfacesAndAbstraction\BorderControl\obj\Debug\netcoreapp2.1\BorderControl.pdb
+D:\SoftUni\CSharp-OOP\InterfacesAndAbstraction\BorderControl\obj\Debug\netcoreapp2.1\BorderControl.csprojAssemblyReference.cache

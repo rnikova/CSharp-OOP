@@ -1,5 +1,6 @@
 ﻿namespace BorderControl
 {
+    using BorderControl.Models;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -10,41 +11,52 @@
         {
         }
 
-        public object Enviroment { get; private set; }
-
         public void Run()
         {
             List<Citizen> citizens = new List<Citizen>();
+
+            int peopeCount = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < peopeCount; i++)
+            {
+                string[] citizenArguments = Console.ReadLine().Split(" ");
+                string name = citizenArguments[0];
+                int age = int.Parse(citizenArguments[1]);
+
+                if (citizenArguments.Length == 4)
+                {
+                    string id = citizenArguments[2];
+                    DateTime birthdate = DateTime.ParseExact(citizenArguments[3], "dd/MM/yyyy", null);
+
+                    Person person = new Person(name, age, id, birthdate);
+
+                    citizens.Add(person);
+                }
+                else if (citizenArguments.Length == 3)
+                {
+                    string group = citizenArguments[2];
+
+                    Rebel rebel = new Rebel(name, age, group);
+
+                    citizens.Add(rebel);
+                }
+            }
 
             string command = Console.ReadLine();
 
             while (command != "End")
             {
-                string[] citizenArguments = command.Split(" ");
-                string name = citizenArguments[0];
+                Citizen currentCitizen = citizens.FirstOrDefault(x => x.Name == command);
 
-                if (citizenArguments.Length == 3)
+                if (currentCitizen != null)
                 {
-                    int age = int.Parse(citizenArguments[1]);
-                    string id = citizenArguments[2];
-
-                    Citizen citizen = new Citizen(name, age, id);
-                    citizens.Add(citizen);
-                }
-                else if (citizenArguments.Length == 2)
-                {
-                    string id = citizenArguments[1];
-
-                    Citizen citizen = new Citizen(name, id);
-                    citizens.Add(citizen);
+                    currentCitizen.BuyFood();
                 }
 
                 command = Console.ReadLine();
             }
 
-            string fakeId = Console.ReadLine();
-
-            Console.WriteLine(string.Join(Environment.NewLine, citizens.Where(x => x.Id.EndsWith(fakeId))));
+            Console.WriteLine(citizens.Sum(x=>x.Food));
         }
     }
 }
