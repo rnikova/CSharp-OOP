@@ -6,7 +6,7 @@ namespace MilitaryElite.Models
 {
     public abstract class SpecialisedSoldier : Private, ISpecialisedSoldier
     {
-        public SpecialisedSoldier(int id, string firstName, string lastName, decimal salary, string corps) 
+        public SpecialisedSoldier(string id, string firstName, string lastName, decimal salary, string corps) 
             : base(id, firstName, lastName, salary)
         {
             ParseCorps(corps);
@@ -26,6 +26,11 @@ namespace MilitaryElite.Models
             }
 
             this.Corps = corps;
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() + Environment.NewLine + $"Corps: {this.Corps}";
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 using MilitaryElite.Contracts;
 
 namespace MilitaryElite.Models
@@ -7,7 +8,7 @@ namespace MilitaryElite.Models
     {
         private readonly List<IMission> missions;
 
-        public Commando(int id, string firstName, string lastName, decimal salary, string corps) 
+        public Commando(string id, string firstName, string lastName, decimal salary, string corps) 
             : base(id, firstName, lastName, salary, corps)
         {
             this.missions = new List<IMission>();
@@ -18,6 +19,21 @@ namespace MilitaryElite.Models
         public void AddMission(IMission mission)
         {
             this.missions.Add(mission);
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine(base.ToString())
+                .AppendLine("Missions:");
+
+            foreach (var mis in this.Missions)
+            {
+                sb.AppendLine($"  {mis.ToString()}");
+            }
+
+            return sb.ToString().TrimEnd();
         }
     }
 }

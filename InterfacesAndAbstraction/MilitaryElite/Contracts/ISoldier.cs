@@ -6,6 +6,6 @@
 
         string LastName { get; }
 
-        int Id { get; }
+        string Id { get; }
     }
 }
