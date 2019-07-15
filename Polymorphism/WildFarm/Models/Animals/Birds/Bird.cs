@@ -9,5 +9,10 @@
         }
 
         public double WingSize { get; private set; }
+
+        public override string ToString()
+        {
+            return $"{base.ToString()}{this.WingSize}, {this.Weight}, {this.FoodEaten}]";
+        }
     }
 }
