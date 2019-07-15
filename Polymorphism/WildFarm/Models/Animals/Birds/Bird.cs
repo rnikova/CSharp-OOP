@@ -12,7 +12,7 @@
 
         public override string ToString()
         {
-            return $"{base.ToString()}{this.WingSize}, {this.Weight}, {this.FoodEaten}]";
+            return base.ToString() + $"{this.WingSize}, {this.Weight}, {this.FoodEaten}]";
         }
     }
 }

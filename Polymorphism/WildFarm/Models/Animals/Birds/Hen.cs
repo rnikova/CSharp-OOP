@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using WildFarm.Models.Foods;
 
 namespace WildFarm.Models.Animals.Birds
@@ -10,11 +11,9 @@ namespace WildFarm.Models.Animals.Birds
         {
         }
 
-        public override void Eat(Food food)
-        {
-            this.Weight += food.Quantity * 0.35;
-            this.FoodEaten += food.Quantity;
-        }
+        protected override List<Type> PrefferedFoods => new List<Type> { typeof(Fruit), typeof(Vegetable), typeof(Meat), typeof(Seeds) };
+
+        protected override double WeightMultiplier => 0.35;
 
         public override string ProduceSound()
         {

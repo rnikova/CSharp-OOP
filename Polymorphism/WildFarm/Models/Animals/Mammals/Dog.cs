@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using WildFarm.Models.Foods;
 
 namespace WildFarm.Models.Animals.Mammals
@@ -10,20 +11,9 @@ namespace WildFarm.Models.Animals.Mammals
         {
         }
 
-        public override void Eat(Food food)
-        {
-            string foodType = food.GetType().Name;
+        protected override List<Type> PrefferedFoods => new List<Type> {typeof(Meat) };
 
-            if (foodType == "Meat")
-            {
-                this.Weight += food.Quantity * 0.4;
-                this.FoodEaten += food.Quantity;
-            }
-            else
-            {
-                throw new ArgumentException($"{this.GetType().Name} does not eat {foodType}!");
-            }
-        }
+        protected override double WeightMultiplier => 0.4;
 
         public override string ProduceSound()
         {
@@ -32,7 +22,7 @@ namespace WildFarm.Models.Animals.Mammals
 
         public override string ToString()
         {
-            return $"{base.ToString()}{this.Weight}, {this.LivingRegion}, {this.FoodEaten}]";
+            return base.ToString() + $"{this.Weight}, {this.LivingRegion}, {this.FoodEaten}]";
         }
     }
 }

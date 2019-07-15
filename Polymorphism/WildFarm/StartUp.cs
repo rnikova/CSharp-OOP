@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using WildFarm.Models.Animals;
-using WildFarm.Models.Animals.Birds;
-using WildFarm.Models.Animals.Mammals;
 using WildFarm.Models.Foods;
 
 namespace WildFarm
@@ -29,7 +27,7 @@ namespace WildFarm
                     Food food = FoodFactory.Create(foodArgs);
                     animal.Eat(food);
                 }
-                catch (ArgumentException ex)
+                catch (InvalidOperationException ex)
                 {
 
                     Console.WriteLine(ex.Message);

@@ -1,12 +1,12 @@
 ﻿namespace WildFarm.Models.Foods
 {
-    public abstract class Food
+    public abstract class Food : IFood
     {
         protected Food(int quantity)
         {
             this.Quantity = quantity;
         }
 
-        public int Quantity { get; set; }
+        public int Quantity { get; private set; }
     }
 }
