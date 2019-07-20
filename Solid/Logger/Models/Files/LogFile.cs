@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Globalization;
 using Logger.Models.Contracts;
 using Logger.Models.Enumerations;
 using Logger.Models.IOManagement;
@@ -10,7 +10,7 @@ namespace Logger.Models.Files
 {
     public class LogFile : IFile
     {
-        private const string dateFormat = "M/dd/yyyy H:mm:ss tt";
+        private const string dateFormat = "M/dd/yyyy h:mm:ss tt";
         private const string currentDirectory = "\\logs\\";
         private const string currentFile = "log.txt";
 
@@ -20,11 +20,12 @@ namespace Logger.Models.Files
         public LogFile()
         {
             this.IOManager = new IOManager(currentDirectory, currentFile);
-            this.currentPath = this.IOManager.CurrentFilePath;
+            this.currentPath = this.IOManager.GetCurrentPath();
             this.IOManager.EnsureDirectoryAndFileExist();
+            this.Path = currentPath + currentDirectory + currentFile;
         }
 
-        public string Path => this.currentPath;
+        public string Path { get; private set; }
 
         public ulong Size => GetFileSize();
 

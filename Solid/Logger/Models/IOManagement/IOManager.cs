@@ -23,7 +23,7 @@ namespace Logger.Models.IOManagement
 
         public string CurrentDirectoryPath => this.currentPath + this.currentDirectory;
 
-        public string CurrentFilePath => this.currentDirectory + this.currentFile;
+        public string CurrentFilePath => this.CurrentDirectoryPath + this.currentFile;
 
         public void EnsureDirectoryAndFileExist()
         {
