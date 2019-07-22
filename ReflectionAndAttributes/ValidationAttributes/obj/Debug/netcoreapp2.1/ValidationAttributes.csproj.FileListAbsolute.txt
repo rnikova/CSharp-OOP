@@ -1,0 +1,11 @@
+D:\SoftUni\CSharp-OOP\ReflectionAndAttributes\ValidationAttributes\bin\Debug\netcoreapp2.1\ValidationAttributes.deps.json
+D:\SoftUni\CSharp-OOP\ReflectionAndAttributes\ValidationAttributes\bin\Debug\netcoreapp2.1\ValidationAttributes.runtimeconfig.json
+D:\SoftUni\CSharp-OOP\ReflectionAndAttributes\ValidationAttributes\bin\Debug\netcoreapp2.1\ValidationAttributes.runtimeconfig.dev.json
+D:\SoftUni\CSharp-OOP\ReflectionAndAttributes\ValidationAttributes\bin\Debug\netcoreapp2.1\ValidationAttributes.dll
+D:\SoftUni\CSharp-OOP\ReflectionAndAttributes\ValidationAttributes\bin\Debug\netcoreapp2.1\ValidationAttributes.pdb
+D:\SoftUni\CSharp-OOP\ReflectionAndAttributes\ValidationAttributes\obj\Debug\netcoreapp2.1\ValidationAttributes.csprojAssemblyReference.cache
+D:\SoftUni\CSharp-OOP\ReflectionAndAttributes\ValidationAttributes\obj\Debug\netcoreapp2.1\ValidationAttributes.csproj.CoreCompileInputs.cache
+D:\SoftUni\CSharp-OOP\ReflectionAndAttributes\ValidationAttributes\obj\Debug\netcoreapp2.1\ValidationAttributes.AssemblyInfoInputs.cache
+D:\SoftUni\CSharp-OOP\ReflectionAndAttributes\ValidationAttributes\obj\Debug\netcoreapp2.1\ValidationAttributes.AssemblyInfo.cs
+D:\SoftUni\CSharp-OOP\ReflectionAndAttributes\ValidationAttributes\obj\Debug\netcoreapp2.1\ValidationAttributes.dll
+D:\SoftUni\CSharp-OOP\ReflectionAndAttributes\ValidationAttributes\obj\Debug\netcoreapp2.1\ValidationAttributes.pdb
