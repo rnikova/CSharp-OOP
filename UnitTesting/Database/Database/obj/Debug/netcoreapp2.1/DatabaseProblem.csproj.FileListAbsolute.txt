@@ -1,0 +1,11 @@
+C:\Users\Rosmari\Desktop\CustomLinkedList\Database\bin\Debug\netcoreapp2.1\DatabaseProblem.deps.json
+C:\Users\Rosmari\Desktop\CustomLinkedList\Database\bin\Debug\netcoreapp2.1\DatabaseProblem.runtimeconfig.json
+C:\Users\Rosmari\Desktop\CustomLinkedList\Database\bin\Debug\netcoreapp2.1\DatabaseProblem.runtimeconfig.dev.json
+C:\Users\Rosmari\Desktop\CustomLinkedList\Database\bin\Debug\netcoreapp2.1\DatabaseProblem.dll
+C:\Users\Rosmari\Desktop\CustomLinkedList\Database\bin\Debug\netcoreapp2.1\DatabaseProblem.pdb
+C:\Users\Rosmari\Desktop\CustomLinkedList\Database\obj\Debug\netcoreapp2.1\DatabaseProblem.csprojAssemblyReference.cache
+C:\Users\Rosmari\Desktop\CustomLinkedList\Database\obj\Debug\netcoreapp2.1\DatabaseProblem.csproj.CoreCompileInputs.cache
+C:\Users\Rosmari\Desktop\CustomLinkedList\Database\obj\Debug\netcoreapp2.1\DatabaseProblem.AssemblyInfoInputs.cache
+C:\Users\Rosmari\Desktop\CustomLinkedList\Database\obj\Debug\netcoreapp2.1\DatabaseProblem.AssemblyInfo.cs
+C:\Users\Rosmari\Desktop\CustomLinkedList\Database\obj\Debug\netcoreapp2.1\DatabaseProblem.dll
+C:\Users\Rosmari\Desktop\CustomLinkedList\Database\obj\Debug\netcoreapp2.1\DatabaseProblem.pdb
