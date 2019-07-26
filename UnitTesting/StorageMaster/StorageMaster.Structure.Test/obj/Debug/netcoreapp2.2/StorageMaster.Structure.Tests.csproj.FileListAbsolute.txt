@@ -1,0 +1,17 @@
+C:\Users\Rosmari\Desktop\StorageMaster\StorageMaster.Structure.Test\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll
+C:\Users\Rosmari\Desktop\StorageMaster\StorageMaster.Structure.Test\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb
+C:\Users\Rosmari\Desktop\StorageMaster\StorageMaster.Structure.Test\bin\Debug\netcoreapp2.2\nunit.engine.netstandard.dll
+C:\Users\Rosmari\Desktop\StorageMaster\StorageMaster.Structure.Test\bin\Debug\netcoreapp2.2\StorageMaster.Structure.Tests.deps.json
+C:\Users\Rosmari\Desktop\StorageMaster\StorageMaster.Structure.Test\bin\Debug\netcoreapp2.2\StorageMaster.Structure.Tests.runtimeconfig.json
+C:\Users\Rosmari\Desktop\StorageMaster\StorageMaster.Structure.Test\bin\Debug\netcoreapp2.2\StorageMaster.Structure.Tests.runtimeconfig.dev.json
+C:\Users\Rosmari\Desktop\StorageMaster\StorageMaster.Structure.Test\bin\Debug\netcoreapp2.2\StorageMaster.Structure.Tests.dll
+C:\Users\Rosmari\Desktop\StorageMaster\StorageMaster.Structure.Test\bin\Debug\netcoreapp2.2\StorageMaster.Structure.Tests.pdb
+C:\Users\Rosmari\Desktop\StorageMaster\StorageMaster.Structure.Test\bin\Debug\netcoreapp2.2\StorageMaster.dll
+C:\Users\Rosmari\Desktop\StorageMaster\StorageMaster.Structure.Test\bin\Debug\netcoreapp2.2\StorageMaster.pdb
+C:\Users\Rosmari\Desktop\StorageMaster\StorageMaster.Structure.Test\obj\Debug\netcoreapp2.2\StorageMaster.Structure.Tests.csprojAssemblyReference.cache
+C:\Users\Rosmari\Desktop\StorageMaster\StorageMaster.Structure.Test\obj\Debug\netcoreapp2.2\StorageMaster.Structure.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Rosmari\Desktop\StorageMaster\StorageMaster.Structure.Test\obj\Debug\netcoreapp2.2\StorageMaster.Structure.Tests.AssemblyInfoInputs.cache
+C:\Users\Rosmari\Desktop\StorageMaster\StorageMaster.Structure.Test\obj\Debug\netcoreapp2.2\StorageMaster.Structure.Tests.AssemblyInfo.cs
+C:\Users\Rosmari\Desktop\StorageMaster\StorageMaster.Structure.Test\obj\Debug\netcoreapp2.2\StorageMaster.Structure.Tests.csproj.CopyComplete
+C:\Users\Rosmari\Desktop\StorageMaster\StorageMaster.Structure.Test\obj\Debug\netcoreapp2.2\StorageMaster.Structure.Tests.dll
+C:\Users\Rosmari\Desktop\StorageMaster\StorageMaster.Structure.Test\obj\Debug\netcoreapp2.2\StorageMaster.Structure.Tests.pdb
