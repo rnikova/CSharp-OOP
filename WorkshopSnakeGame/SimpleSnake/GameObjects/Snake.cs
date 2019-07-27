@@ -4,13 +4,12 @@
     using System.Collections.Generic;
 
     using SimpleSnake.Enums;
+    using SimpleSnake.GameObjects.Foods;
+    using System;
+    using SimpleSnake.Constants;
 
     public class Snake
     {
-        private const int DEFAULT_SNAKE_LENGTH = 6;
-        private const int DEFAULT_X = 8;
-        private const int DEFAULT_Y = 7;
-
         private List<Coordinate> snakeBody;
 
         public Snake()
@@ -24,6 +23,8 @@
 
         public Direction Direction { get; set; }
 
+        public Coordinate Head => this.snakeBody.Last();
+
         public void Move()
         {
             Coordinate newHead = GetNewCoordinate();
@@ -34,8 +35,7 @@
 
         private Coordinate GetNewCoordinate()
         {
-            Coordinate snakeHead = this.snakeBody.Last();
-            Coordinate newHeadCoordinate = new Coordinate(snakeHead.CoordinateX, snakeHead.CoordinateY);
+            Coordinate newHeadCoordinate = new Coordinate(this.Head.CoordinateX, this.Head.CoordinateY);
 
             switch (this.Direction)
             {
@@ -56,12 +56,21 @@
             return newHeadCoordinate;
         }
 
+        public void Eat(Food food)
+        {
+            for (int i = 0; i < food.FoodPoints; i++)
+            {
+                Coordinate newHeadCoordinate = this.GetNewCoordinate();
+                this.snakeBody.Add(newHeadCoordinate);
+            }
+        }
+
         private void InitializeBody()
         {
-            int x = DEFAULT_X;
-            int y = DEFAULT_Y;
+            int x = GameConstants.Snake.DEFAULT_X;
+            int y = GameConstants.Snake.DEFAULT_Y;
 
-            for (int i = 0; i <= DEFAULT_SNAKE_LENGTH; i++)
+            for (int i = 0; i <= GameConstants.Snake.DEFAULT_SNAKE_LENGTH; i++)
             {
                 this.snakeBody.Add(new Coordinate(x, y));
                 x++;

@@ -4,6 +4,7 @@
     using System.Linq;
     using System.Collections.Generic;
 
+    using SimpleSnake.Constants;
     using SimpleSnake.GameObjects;
 
     public class DrawManager
@@ -19,9 +20,13 @@
         {
             foreach (var coordinate in coordinates)
             {
+                if (symbol == GameConstants.Snake.SNAKE_SYMBOL)
+                {
+                    snakeBodyElements.Add(coordinate);
+                }
+
                 Console.SetCursorPosition(coordinate.CoordinateX, coordinate.CoordinateY);
                 Console.Write(symbol);
-                snakeBodyElements.Add(coordinate);
             }
         }
 

@@ -1,12 +1,11 @@
 ﻿namespace SimpleSnake.GameObjects.Foods
 {
+    using SimpleSnake.Constants;
+
     public class FoodAsterisk : Food
     {
-        private const string FOOD_SYMBOL = "*";
-        private const int FOOD_POINTS = 1;
-
-        public FoodAsterisk(string foodSymbol, int foodPoints, Coordinate foodCoordinates) 
-            : base(foodSymbol, foodPoints, foodCoordinates)
+        public FoodAsterisk(Coordinate foodCoordinates) 
+            : base(GameConstants.Food.ASTERICS_SYMBOL, GameConstants.Food.ASTERICS_POINTS, foodCoordinates)
         {
         }
     }
