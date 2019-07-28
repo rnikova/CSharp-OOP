@@ -1,0 +1,4 @@
+D:\SoftUni\CSharp-OOP\CustomUnitTestingFrameworkWorkshop\MyProgram\obj\Debug\netcoreapp2.1\MyProgram.csprojAssemblyReference.cache
+D:\SoftUni\CSharp-OOP\CustomUnitTestingFrameworkWorkshop\MyProgram\obj\Debug\netcoreapp2.1\MyProgram.csproj.CoreCompileInputs.cache
+D:\SoftUni\CSharp-OOP\CustomUnitTestingFrameworkWorkshop\MyProgram\obj\Debug\netcoreapp2.1\MyProgram.AssemblyInfoInputs.cache
+D:\SoftUni\CSharp-OOP\CustomUnitTestingFrameworkWorkshop\MyProgram\obj\Debug\netcoreapp2.1\MyProgram.AssemblyInfo.cs

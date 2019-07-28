@@ -1,0 +1,9 @@
+D:\SoftUni\CSharp-OOP\CustomUnitTestingFrameworkWorkshop\CustomTestingFramewrok\bin\Debug\netcoreapp2.1\CustomTestingFramework.deps.json
+D:\SoftUni\CSharp-OOP\CustomUnitTestingFrameworkWorkshop\CustomTestingFramewrok\bin\Debug\netcoreapp2.1\CustomTestingFramework.dll
+D:\SoftUni\CSharp-OOP\CustomUnitTestingFrameworkWorkshop\CustomTestingFramewrok\bin\Debug\netcoreapp2.1\CustomTestingFramework.pdb
+D:\SoftUni\CSharp-OOP\CustomUnitTestingFrameworkWorkshop\CustomTestingFramewrok\obj\Debug\netcoreapp2.1\CustomTestingFramework.csprojAssemblyReference.cache
+D:\SoftUni\CSharp-OOP\CustomUnitTestingFrameworkWorkshop\CustomTestingFramewrok\obj\Debug\netcoreapp2.1\CustomTestingFramework.csproj.CoreCompileInputs.cache
+D:\SoftUni\CSharp-OOP\CustomUnitTestingFrameworkWorkshop\CustomTestingFramewrok\obj\Debug\netcoreapp2.1\CustomTestingFramework.AssemblyInfoInputs.cache
+D:\SoftUni\CSharp-OOP\CustomUnitTestingFrameworkWorkshop\CustomTestingFramewrok\obj\Debug\netcoreapp2.1\CustomTestingFramework.AssemblyInfo.cs
+D:\SoftUni\CSharp-OOP\CustomUnitTestingFrameworkWorkshop\CustomTestingFramewrok\obj\Debug\netcoreapp2.1\CustomTestingFramework.dll
+D:\SoftUni\CSharp-OOP\CustomUnitTestingFrameworkWorkshop\CustomTestingFramewrok\obj\Debug\netcoreapp2.1\CustomTestingFramework.pdb
