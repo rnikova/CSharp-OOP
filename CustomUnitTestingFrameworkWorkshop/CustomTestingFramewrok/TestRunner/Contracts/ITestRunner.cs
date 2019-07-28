@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace CustomTestingFramework.TestRunner.Contracts
 {
-    interface ITestRunner
+    public interface ITestRunner
     {
+        ICollection<string> Run(string assemblyPath);
     }
 }

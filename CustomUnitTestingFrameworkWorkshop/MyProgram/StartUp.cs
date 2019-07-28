@@ -7,7 +7,7 @@ namespace MyProgram
     {
         public static void Main(string[] args)
         {
-            var runner = new Runner();
+            var runner = new TestRunner();
 
             var result = runner.Run(@"..\..\..\..\CustomTestingFramework.Tests\bin\Debug\netcoreapp2.2\CustomTestingFramework.Tests.dll");
 
