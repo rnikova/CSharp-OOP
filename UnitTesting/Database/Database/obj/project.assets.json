@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rosmari\\Desktop\\CustomLinkedList\\Database\\DatabaseProblem.csproj",
+      "projectUniqueName": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\Database\\Database\\DatabaseProblem.csproj",
       "projectName": "DatabaseProblem",
-      "projectPath": "C:\\Users\\Rosmari\\Desktop\\CustomLinkedList\\Database\\DatabaseProblem.csproj",
+      "projectPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\Database\\Database\\DatabaseProblem.csproj",
       "packagesPath": "C:\\Users\\Rosmari\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rosmari\\Desktop\\CustomLinkedList\\Database\\obj\\",
+      "outputPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\Database\\Database\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

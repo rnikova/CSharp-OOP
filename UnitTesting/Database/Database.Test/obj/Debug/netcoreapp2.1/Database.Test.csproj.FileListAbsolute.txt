@@ -1,0 +1,17 @@
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database.Test\obj\Debug\netcoreapp2.1\Database.Test.csprojAssemblyReference.cache
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database.Test\obj\Debug\netcoreapp2.1\Database.Test.csproj.CoreCompileInputs.cache
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database.Test\obj\Debug\netcoreapp2.1\Database.Test.AssemblyInfoInputs.cache
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database.Test\obj\Debug\netcoreapp2.1\Database.Test.AssemblyInfo.cs
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database.Test\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database.Test\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database.Test\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database.Test\bin\Debug\netcoreapp2.1\Database.Test.deps.json
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database.Test\bin\Debug\netcoreapp2.1\Database.Test.runtimeconfig.json
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database.Test\bin\Debug\netcoreapp2.1\Database.Test.runtimeconfig.dev.json
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database.Test\bin\Debug\netcoreapp2.1\Database.Test.dll
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database.Test\bin\Debug\netcoreapp2.1\Database.Test.pdb
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database.Test\bin\Debug\netcoreapp2.1\DatabaseProblem.dll
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database.Test\bin\Debug\netcoreapp2.1\DatabaseProblem.pdb
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database.Test\obj\Debug\netcoreapp2.1\Database.Test.csproj.CopyComplete
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database.Test\obj\Debug\netcoreapp2.1\Database.Test.dll
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database.Test\obj\Debug\netcoreapp2.1\Database.Test.pdb

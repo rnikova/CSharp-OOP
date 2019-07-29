@@ -9,3 +9,14 @@ C:\Users\Rosmari\Desktop\CustomLinkedList\Database\obj\Debug\netcoreapp2.1\Datab
 C:\Users\Rosmari\Desktop\CustomLinkedList\Database\obj\Debug\netcoreapp2.1\DatabaseProblem.AssemblyInfo.cs
 C:\Users\Rosmari\Desktop\CustomLinkedList\Database\obj\Debug\netcoreapp2.1\DatabaseProblem.dll
 C:\Users\Rosmari\Desktop\CustomLinkedList\Database\obj\Debug\netcoreapp2.1\DatabaseProblem.pdb
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database\bin\Debug\netcoreapp2.1\DatabaseProblem.deps.json
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database\bin\Debug\netcoreapp2.1\DatabaseProblem.runtimeconfig.json
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database\bin\Debug\netcoreapp2.1\DatabaseProblem.runtimeconfig.dev.json
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database\bin\Debug\netcoreapp2.1\DatabaseProblem.dll
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database\bin\Debug\netcoreapp2.1\DatabaseProblem.pdb
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database\obj\Debug\netcoreapp2.1\DatabaseProblem.csprojAssemblyReference.cache
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database\obj\Debug\netcoreapp2.1\DatabaseProblem.csproj.CoreCompileInputs.cache
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database\obj\Debug\netcoreapp2.1\DatabaseProblem.AssemblyInfoInputs.cache
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database\obj\Debug\netcoreapp2.1\DatabaseProblem.AssemblyInfo.cs
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database\obj\Debug\netcoreapp2.1\DatabaseProblem.dll
+D:\SoftUni\CSharp-OOP\UnitTesting\Database\Database\obj\Debug\netcoreapp2.1\DatabaseProblem.pdb
