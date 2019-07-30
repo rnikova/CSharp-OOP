@@ -1,0 +1,9 @@
+C:\Users\Rosmari\Desktop\DatabaseExtended\bin\Debug\netcoreapp2.1\ExtendedDatabase.cs
+C:\Users\Rosmari\Desktop\DatabaseExtended\bin\Debug\netcoreapp2.1\ExtendedDatabase.deps.json
+C:\Users\Rosmari\Desktop\DatabaseExtended\bin\Debug\netcoreapp2.1\ExtendedDatabase.dll
+C:\Users\Rosmari\Desktop\DatabaseExtended\bin\Debug\netcoreapp2.1\ExtendedDatabase.pdb
+C:\Users\Rosmari\Desktop\DatabaseExtended\obj\Debug\netcoreapp2.1\ExtendedDatabase.csproj.CoreCompileInputs.cache
+C:\Users\Rosmari\Desktop\DatabaseExtended\obj\Debug\netcoreapp2.1\ExtendedDatabase.AssemblyInfoInputs.cache
+C:\Users\Rosmari\Desktop\DatabaseExtended\obj\Debug\netcoreapp2.1\ExtendedDatabase.AssemblyInfo.cs
+C:\Users\Rosmari\Desktop\DatabaseExtended\obj\Debug\netcoreapp2.1\ExtendedDatabase.dll
+C:\Users\Rosmari\Desktop\DatabaseExtended\obj\Debug\netcoreapp2.1\ExtendedDatabase.pdb

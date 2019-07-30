@@ -1,0 +1,9 @@
+C:\Users\Rosmari\Desktop\Database\bin\Debug\netcoreapp2.1\Database.deps.json
+C:\Users\Rosmari\Desktop\Database\bin\Debug\netcoreapp2.1\Database.dll
+C:\Users\Rosmari\Desktop\Database\bin\Debug\netcoreapp2.1\Database.pdb
+C:\Users\Rosmari\Desktop\Database\obj\Debug\netcoreapp2.1\Database.csprojAssemblyReference.cache
+C:\Users\Rosmari\Desktop\Database\obj\Debug\netcoreapp2.1\Database.csproj.CoreCompileInputs.cache
+C:\Users\Rosmari\Desktop\Database\obj\Debug\netcoreapp2.1\Database.AssemblyInfoInputs.cache
+C:\Users\Rosmari\Desktop\Database\obj\Debug\netcoreapp2.1\Database.AssemblyInfo.cs
+C:\Users\Rosmari\Desktop\Database\obj\Debug\netcoreapp2.1\Database.dll
+C:\Users\Rosmari\Desktop\Database\obj\Debug\netcoreapp2.1\Database.pdb
