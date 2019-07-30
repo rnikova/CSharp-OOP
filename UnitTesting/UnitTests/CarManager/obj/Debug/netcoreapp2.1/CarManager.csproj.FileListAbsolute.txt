@@ -1,9 +1,0 @@
-C:\Users\Rosmari\Desktop\CarManager\bin\Debug\netcoreapp2.1\CarManager.deps.json
-C:\Users\Rosmari\Desktop\CarManager\bin\Debug\netcoreapp2.1\CarManager.dll
-C:\Users\Rosmari\Desktop\CarManager\bin\Debug\netcoreapp2.1\CarManager.pdb
-C:\Users\Rosmari\Desktop\CarManager\obj\Debug\netcoreapp2.1\CarManager.csprojAssemblyReference.cache
-C:\Users\Rosmari\Desktop\CarManager\obj\Debug\netcoreapp2.1\CarManager.csproj.CoreCompileInputs.cache
-C:\Users\Rosmari\Desktop\CarManager\obj\Debug\netcoreapp2.1\CarManager.AssemblyInfoInputs.cache
-C:\Users\Rosmari\Desktop\CarManager\obj\Debug\netcoreapp2.1\CarManager.AssemblyInfo.cs
-C:\Users\Rosmari\Desktop\CarManager\obj\Debug\netcoreapp2.1\CarManager.dll
-C:\Users\Rosmari\Desktop\CarManager\obj\Debug\netcoreapp2.1\CarManager.pdb
