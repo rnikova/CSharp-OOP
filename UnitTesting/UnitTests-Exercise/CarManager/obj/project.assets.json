@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\CarManager\\CarManager.csproj",
+      "projectUniqueName": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\CarManager\\CarManager.csproj",
       "projectName": "CarManager",
-      "projectPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\CarManager\\CarManager.csproj",
+      "projectPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\CarManager\\CarManager.csproj",
       "packagesPath": "C:\\Users\\Rosmari\\.nuget\\packages\\",
-      "outputPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\CarManager\\obj\\",
+      "outputPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\CarManager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

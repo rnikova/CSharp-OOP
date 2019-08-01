@@ -5760,11 +5760,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\Service.Tests\\Service.Tests.csproj",
+      "projectUniqueName": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\Service.Tests\\Service.Tests.csproj",
       "projectName": "Service.Tests",
-      "projectPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\Service.Tests\\Service.Tests.csproj",
+      "projectPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\Service.Tests\\Service.Tests.csproj",
       "packagesPath": "C:\\Users\\Rosmari\\.nuget\\packages\\",
-      "outputPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\Service.Tests\\obj\\",
+      "outputPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\Service.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

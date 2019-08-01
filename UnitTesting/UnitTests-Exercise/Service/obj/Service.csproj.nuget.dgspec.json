@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\Service\\Service.csproj": {}
+    "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\Service\\Service.csproj": {}
   },
   "projects": {
-    "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\Service\\Service.csproj": {
+    "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\Service\\Service.csproj",
+        "projectUniqueName": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\Service\\Service.csproj",
+        "projectPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\Rosmari\\.nuget\\packages\\",
-        "outputPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\Service\\obj\\",
+        "outputPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

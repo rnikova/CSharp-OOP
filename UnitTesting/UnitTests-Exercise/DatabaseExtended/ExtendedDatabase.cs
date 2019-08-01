@@ -7,13 +7,18 @@ namespace ExtendedDatabase
     {
         private Person[] persons;
 
+        private int count;
+
         public ExtendedDatabase(params Person[] persons)
         {
             this.persons = new Person[16];
             AddRange(persons);
         }
 
-        public int Count { get; private set; }
+        public int Count
+        {
+            get { return count; }
+        }
 
         private void AddRange(Person[] data)
         {
@@ -27,12 +32,12 @@ namespace ExtendedDatabase
                 this.Add(data[i]);
             }
 
-            this.Count = data.Length;
+            this.count = data.Length;
         }
 
         public void Add(Person person)
         {
-            if (this.Count == 16)
+            if (this.count == 16)
             {
                 throw new InvalidOperationException("Array's capacity must be exactly 16 integers!");
             }
@@ -47,19 +52,19 @@ namespace ExtendedDatabase
                 throw new InvalidOperationException("There is already user with this Id!");
             }
 
-            this.persons[this.Count] = person;
-            this.Count++;
+            this.persons[this.count] = person;
+            this.count++;
         }
 
         public void Remove()
         {
-            if (this.Count == 0)
+            if (this.count == 0)
             {
                 throw new InvalidOperationException();
             }
 
-            this.Count--;
-            this.persons[this.Count] = null;
+            this.count--;
+            this.persons[this.count] = null;
         }
 
         public Person FindByUsername(string name)

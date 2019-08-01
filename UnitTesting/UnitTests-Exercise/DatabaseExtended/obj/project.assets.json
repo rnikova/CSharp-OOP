@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\DatabaseExtended\\ExtendedDatabase.csproj",
-      "projectName": "ExtendedDatabase",
-      "projectPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\DatabaseExtended\\ExtendedDatabase.csproj",
+      "projectUniqueName": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\DatabaseExtended\\DatabaseExtended.csproj",
+      "projectName": "DatabaseExtended",
+      "projectPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\DatabaseExtended\\DatabaseExtended.csproj",
       "packagesPath": "C:\\Users\\Rosmari\\.nuget\\packages\\",
-      "outputPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\DatabaseExtended\\obj\\",
+      "outputPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\DatabaseExtended\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

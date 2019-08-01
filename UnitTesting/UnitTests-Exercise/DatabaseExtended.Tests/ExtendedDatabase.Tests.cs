@@ -1,13 +1,13 @@
+using ExtendedDatabase;
+using NUnit.Framework;
+using System;
+
 namespace Tests
 {
-    using ExtendedDatabase;
-    using NUnit.Framework;
-    using System;
-
     [TestFixture]
     public class ExtendedDatabaseTests
     {
-        private ExtendedDatabase database;
+        private ExtendedDatabase.ExtendedDatabase database;
         private Person person;
 
         [SetUp]
@@ -15,7 +15,7 @@ namespace Tests
         {
             this.person = new Person(1, "gosho");
             Person[] persons = new Person[1] { person };
-            this.database = new ExtendedDatabase(persons);
+            this.database = new ExtendedDatabase.ExtendedDatabase(persons);
         }
 
         [Test]
@@ -27,7 +27,26 @@ namespace Tests
         [Test]
         public void ExtendedDatabaseConstructorShouldSetCorrectly()
         {
-            Assert.That(this.database, Is.InstanceOf<ExtendedDatabase>());
+            Assert.That(this.database, Is.InstanceOf<ExtendedDatabase.ExtendedDatabase>());
+        }
+
+        [Test]
+        public void ExtendedDatabaseConstructorShoultInitialiazeCorrectly()
+        {
+            Assert.AreEqual(1, this.database.Count);
+        }
+
+        [Test]
+        public void ExtendedDatabaseAddRangeShoultThrowsException()
+        {
+            Person[] persons = new Person[17];
+
+            for (int i = 0; i < 17; i++)
+            {
+                persons[i] = new Person(i, $"{i}");
+            }
+
+            Assert.Throws<ArgumentException>(() => new ExtendedDatabase.ExtendedDatabase(persons));
         }
 
         [Test]
@@ -104,6 +123,12 @@ namespace Tests
         public void ExtendedDatabaseShouldThrowsExceptionWithInvalidId()
         {
             Assert.Throws<InvalidOperationException>(() => this.database.FindById(100));
+        }
+
+        [Test]
+        public void ExtendedDatabaseShouldThrowsExceptionWithNegativeId()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => this.database.FindById(-1));
         }
 
         [Test]

@@ -5776,11 +5776,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\Database.Tests\\Database.Tests.csproj",
+      "projectUniqueName": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\Database.Tests\\Database.Tests.csproj",
       "projectName": "Database.Tests",
-      "projectPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\Database.Tests\\Database.Tests.csproj",
+      "projectPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\Database.Tests\\Database.Tests.csproj",
       "packagesPath": "C:\\Users\\Rosmari\\.nuget\\packages\\",
-      "outputPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\Database.Tests\\obj\\",
+      "outputPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\Database.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5799,8 +5799,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\Database\\Database.csproj": {
-              "projectPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\Database\\Database.csproj"
+            "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\Database\\Database.csproj": {
+              "projectPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\Database\\Database.csproj"
             }
           }
         }

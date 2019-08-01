@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rosmari\\Desktop\\DatabaseExtended\\DatabaseExtended.csproj": {}
+    "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\DatabaseExtended\\DatabaseExtended.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rosmari\\Desktop\\DatabaseExtended\\DatabaseExtended.csproj": {
+    "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\DatabaseExtended\\DatabaseExtended.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rosmari\\Desktop\\DatabaseExtended\\DatabaseExtended.csproj",
+        "projectUniqueName": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\DatabaseExtended\\DatabaseExtended.csproj",
         "projectName": "DatabaseExtended",
-        "projectPath": "C:\\Users\\Rosmari\\Desktop\\DatabaseExtended\\DatabaseExtended.csproj",
+        "projectPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\DatabaseExtended\\DatabaseExtended.csproj",
         "packagesPath": "C:\\Users\\Rosmari\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rosmari\\Desktop\\DatabaseExtended\\obj\\",
+        "outputPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\DatabaseExtended\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

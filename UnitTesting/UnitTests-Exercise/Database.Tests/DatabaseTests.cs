@@ -27,7 +27,7 @@ namespace Tests
         }
 
         [Test]
-        public void AddMethodShouldWorkCorrectly()
+        public void AddMethodShouldWorksCorrectly()
         {
             for (int i = 0; i < 6; i++)
             {
@@ -59,16 +59,14 @@ namespace Tests
         [Test]
         public void ConstructorShoultInitialiazeCorrectly()
         {
-            this.database = new Database(1, 2, 3, 4);
-
-            Assert.That(4, Is.EqualTo(this.database.Count));
+            Assert.AreEqual(6, this.database.Count);
         }
 
         [Test]
         public void ConstructorShoultThrowExceptionWithInvalidParameters()
         {
             Assert.Throws<InvalidOperationException>(
-                () => this.database = new Database(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16));
+                () => this.database = new Database(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17));
         }
 
         [Test]

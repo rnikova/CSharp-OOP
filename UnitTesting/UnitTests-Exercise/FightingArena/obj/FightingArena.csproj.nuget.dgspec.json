@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\FightingArena\\FightingArena.csproj": {}
+    "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\FightingArena\\FightingArena.csproj": {}
   },
   "projects": {
-    "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\FightingArena\\FightingArena.csproj": {
+    "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\FightingArena\\FightingArena.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\FightingArena\\FightingArena.csproj",
+        "projectUniqueName": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\FightingArena\\FightingArena.csproj",
         "projectName": "FightingArena",
-        "projectPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\FightingArena\\FightingArena.csproj",
+        "projectPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\FightingArena\\FightingArena.csproj",
         "packagesPath": "C:\\Users\\Rosmari\\.nuget\\packages\\",
-        "outputPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests\\FightingArena\\obj\\",
+        "outputPath": "D:\\SoftUni\\CSharp-OOP\\UnitTesting\\UnitTests-Exercise\\FightingArena\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

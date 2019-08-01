@@ -1,7 +1,7 @@
-﻿namespace Database
-{
-    using System;
+﻿using System;
 
+namespace Database
+{
     public class Database
     {
         private int[] data;
@@ -12,11 +12,6 @@
         {
             this.data = new int[16];
 
-            if (data.Length >= 16)
-            {
-                throw new InvalidOperationException("Array's capacity must be exactly 16 integers!");
-            }
-
             for (int i = 0; i < data.Length; i++)
             {
                 this.Add(data[i]);
@@ -25,7 +20,10 @@
             this.count = data.Length;
         }
 
-        public int Count => this.count;
+        public int Count
+        {
+            get { return count; }
+        }
 
         public void Add(int element)
         {
