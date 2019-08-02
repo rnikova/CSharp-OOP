@@ -11,3 +11,7 @@ D:\SoftUni\CSharp-OOP\UnitTesting\UnitTests-Exercise\Service.Tests\obj\Debug\net
 D:\SoftUni\CSharp-OOP\UnitTesting\UnitTests-Exercise\Service.Tests\obj\Debug\netcoreapp2.1\Service.Tests.AssemblyInfo.cs
 D:\SoftUni\CSharp-OOP\UnitTesting\UnitTests-Exercise\Service.Tests\obj\Debug\netcoreapp2.1\Service.Tests.dll
 D:\SoftUni\CSharp-OOP\UnitTesting\UnitTests-Exercise\Service.Tests\obj\Debug\netcoreapp2.1\Service.Tests.pdb
+D:\SoftUni\CSharp-OOP\UnitTesting\UnitTests-Exercise\Service.Tests\bin\Debug\netcoreapp2.1\Service.dll
+D:\SoftUni\CSharp-OOP\UnitTesting\UnitTests-Exercise\Service.Tests\bin\Debug\netcoreapp2.1\Service.pdb
+D:\SoftUni\CSharp-OOP\UnitTesting\UnitTests-Exercise\Service.Tests\obj\Debug\netcoreapp2.1\Service.Tests.csprojAssemblyReference.cache
+D:\SoftUni\CSharp-OOP\UnitTesting\UnitTests-Exercise\Service.Tests\obj\Debug\netcoreapp2.1\Service.Tests.csproj.CopyComplete

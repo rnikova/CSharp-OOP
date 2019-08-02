@@ -11,13 +11,14 @@ namespace Service.Models.Devices
         private string make;
         private readonly List<IPart> parts;
 
+        //done
         public Device(string make)
         {
             this.Make = make;
 
             this.parts = new List<IPart>();
         }
-
+        //done
         public string Make
         {
             get
