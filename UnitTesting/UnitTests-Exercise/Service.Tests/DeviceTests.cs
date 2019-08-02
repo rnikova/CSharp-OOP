@@ -8,20 +8,40 @@ namespace Service.Tests
     [TestFixture]
     public class DeviceTests
     {
-        Laptop laptop;
+        private Laptop laptop;
+        private PC pc;
+        private Phone phone;
 
         [SetUp]
         public void Setup()
         {
             laptop = new Laptop("hp");
+            pc = new PC("hp");
+            phone = new Phone("hp");
         }
 
         [Test]
-        public void Device_Constructor_Should_Set_Correctly()
+        public void Laptop_Constructor_Should_Set_Correctly()
         {
             Assert.IsNotNull(laptop);
             Assert.AreEqual("hp", laptop.Make);
             Assert.IsNotNull(laptop.Parts);
+        }
+
+        [Test]
+        public void PC_Constructor_Should_Set_Correctly()
+        {
+            Assert.IsNotNull(pc);
+            Assert.AreEqual("hp", pc.Make);
+            Assert.IsNotNull(pc.Parts);
+        }
+
+        [Test]
+        public void Phone_Constructor_Should_Set_Correctly()
+        {
+            Assert.IsNotNull(phone);
+            Assert.AreEqual("hp", phone.Make);
+            Assert.IsNotNull(phone.Parts);
         }
 
         [Test]
@@ -30,6 +50,8 @@ namespace Service.Tests
         public void Make_Property_Should_Throws_Exception_With_Null_Or_Empty_Value(string value)
         {
             Assert.Throws<ArgumentException>(() => laptop = new Laptop(value));
+            Assert.Throws<ArgumentException>(() => pc = new PC(value));
+            Assert.Throws<ArgumentException>(() => phone = new Phone(value));
         }
 
         [Test]
@@ -46,8 +68,10 @@ namespace Service.Tests
             LaptopPart part = new LaptopPart("mouse", 23.3m, false);
 
             laptop.AddPart(part);
+            var parts = laptop.Parts;
 
             Assert.AreEqual(1, laptop.Parts.Count);
+            Assert.That(parts, Has.Member(part));
         }
 
         [Test]
