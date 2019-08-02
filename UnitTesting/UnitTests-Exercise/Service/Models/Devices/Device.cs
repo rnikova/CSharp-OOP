@@ -11,14 +11,14 @@ namespace Service.Models.Devices
         private string make;
         private readonly List<IPart> parts;
 
-        //done
+        
         public Device(string make)
         {
             this.Make = make;
 
             this.parts = new List<IPart>();
         }
-        //done
+        
         public string Make
         {
             get
@@ -37,7 +37,7 @@ namespace Service.Models.Devices
         }
 
         public IReadOnlyCollection<IPart> Parts => this.parts;
-
+        
         public virtual void AddPart(IPart part)
         {
             if (this.Parts.Where(p => p.Name == part.Name).Count() == 1)

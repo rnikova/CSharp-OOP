@@ -59,5 +59,46 @@ namespace Service.Tests
 
             Assert.Throws<InvalidOperationException>(() => laptop.AddPart(part));
         }
+
+        [Test]
+        public void RemovePart_Method_Should_Throws_Exception_With_Null_Or_Empty_Part()
+        { 
+            Assert.Throws<ArgumentException>(() => laptop.RemovePart(""));
+        }
+
+        [Test]
+        public void RemovePart_Method_Should_Throws_Exception_With_Invalid_Part()
+        {
+            Assert.Throws<InvalidOperationException>(() => laptop.RemovePart("keyboard"));
+        }
+
+        [Test]
+        public void RemovePart_Method_Should_Works_Correctly()
+        {
+            LaptopPart part = new LaptopPart("mouse", 23.3m, false);
+
+            laptop.AddPart(part);
+            laptop.RemovePart("mouse");
+
+            Assert.AreEqual(0, laptop.Parts.Count);
+        }
+
+        [Test]
+        public void RepairPart_Method_Should_Throws_Exception_With_Null_Or_Empty_Part()
+        {
+            Assert.Throws<ArgumentException>(() => laptop.RepairPart(""));
+        }
+
+        [Test]
+        public void Repair_Method_Should_Throws_Exception_With_Invalid_Part()
+        {
+            Assert.Throws<InvalidOperationException>(() => laptop.RemovePart("keyboard"));
+        }
+
+        [Test]
+        public void Repair_Method_Should_Throws_Exception_With_Not_Broken_Part()
+        {
+            Assert.Throws<InvalidOperationException>(() => laptop.RemovePart("mouse"));
+        }        
     }
 }
