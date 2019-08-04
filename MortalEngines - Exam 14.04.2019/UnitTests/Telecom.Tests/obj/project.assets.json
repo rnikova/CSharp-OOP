@@ -1640,6 +1640,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "Telecom/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Telecom.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Telecom.dll": {}
+        }
       }
     }
   },
@@ -5743,6 +5753,11 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "Telecom/1.0.0": {
+      "type": "project",
+      "path": "../Telecom/Telecom.csproj",
+      "msbuildProject": "../Telecom/Telecom.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5750,6 +5765,7 @@
       "Microsoft.NET.Test.Sdk >= 15.9.0",
       "Microsoft.NETCore.App >= 2.1.0",
       "NUnit3TestAdapter >= 3.9.0",
+      "Telecom >= 1.0.0",
       "nunit >= 3.9.0"
     ]
   },
@@ -5782,7 +5798,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\SoftUni\\CSharp-OOP\\MortalEngines - Exam 14.04.2019\\UnitTests\\Telecom\\Telecom.csproj": {
+              "projectPath": "D:\\SoftUni\\CSharp-OOP\\MortalEngines - Exam 14.04.2019\\UnitTests\\Telecom\\Telecom.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
