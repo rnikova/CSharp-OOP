@@ -12,7 +12,6 @@ namespace MXGP.Models.Riders
         private const int MIN_LENGTH = 5;
 
         private string name;
-        private bool canParticipate;
 
         public Rider(string name)
         {
@@ -34,23 +33,11 @@ namespace MXGP.Models.Riders
             }
         }
 
-        public IMotorcycle Motorcycle { get; set; }
+        public IMotorcycle Motorcycle { get; private set; }
 
         public int NumberOfWins { get; private set; }
 
-        public bool CanParticipate
-        {
-            get => canParticipate;
-            protected set
-            {
-                if (this.Motorcycle != null)
-                {
-                    value = true;
-                }
-
-                this.canParticipate = value;
-            }
-        }
+        public bool CanParticipate { get; private set; }
 
         public void AddMotorcycle(IMotorcycle motorcycle)
         {

@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rosmari\\Desktop\\MXGP\\MXGP.csproj",
+      "projectUniqueName": "D:\\SoftUni\\CSharp-OOP\\DemoExam 04.08.1029\\MXGP\\MXGP.csproj",
       "projectName": "MXGP",
-      "projectPath": "C:\\Users\\Rosmari\\Desktop\\MXGP\\MXGP.csproj",
+      "projectPath": "D:\\SoftUni\\CSharp-OOP\\DemoExam 04.08.1029\\MXGP\\MXGP.csproj",
       "packagesPath": "C:\\Users\\Rosmari\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rosmari\\Desktop\\MXGP\\obj\\",
+      "outputPath": "D:\\SoftUni\\CSharp-OOP\\DemoExam 04.08.1029\\MXGP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

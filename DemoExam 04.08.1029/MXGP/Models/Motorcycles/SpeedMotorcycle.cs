@@ -21,7 +21,7 @@ namespace MXGP.Models.Motorcycles
             get => base.HorsePower;
             protected set
             {
-                if (value <= MIN_HORSE_POWER || value >= MAX_HORSE_POWER)
+                if (value < MIN_HORSE_POWER || value > MAX_HORSE_POWER)
                 {
                     throw new ArgumentException(string.Format(ExceptionMessages.InvalidHorsePower, value));
                 }

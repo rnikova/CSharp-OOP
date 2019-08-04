@@ -9,3 +9,14 @@ C:\Users\Rosmari\Desktop\MXGP\bin\Debug\netcoreapp2.1\MXGP.dll
 C:\Users\Rosmari\Desktop\MXGP\bin\Debug\netcoreapp2.1\MXGP.pdb
 C:\Users\Rosmari\Desktop\MXGP\obj\Debug\netcoreapp2.1\MXGP.dll
 C:\Users\Rosmari\Desktop\MXGP\obj\Debug\netcoreapp2.1\MXGP.pdb
+D:\SoftUni\CSharp-OOP\DemoExam 04.08.1029\MXGP\bin\Debug\netcoreapp2.1\MXGP.deps.json
+D:\SoftUni\CSharp-OOP\DemoExam 04.08.1029\MXGP\bin\Debug\netcoreapp2.1\MXGP.runtimeconfig.json
+D:\SoftUni\CSharp-OOP\DemoExam 04.08.1029\MXGP\bin\Debug\netcoreapp2.1\MXGP.runtimeconfig.dev.json
+D:\SoftUni\CSharp-OOP\DemoExam 04.08.1029\MXGP\bin\Debug\netcoreapp2.1\MXGP.dll
+D:\SoftUni\CSharp-OOP\DemoExam 04.08.1029\MXGP\bin\Debug\netcoreapp2.1\MXGP.pdb
+D:\SoftUni\CSharp-OOP\DemoExam 04.08.1029\MXGP\obj\Debug\netcoreapp2.1\MXGP.csprojAssemblyReference.cache
+D:\SoftUni\CSharp-OOP\DemoExam 04.08.1029\MXGP\obj\Debug\netcoreapp2.1\MXGP.csproj.CoreCompileInputs.cache
+D:\SoftUni\CSharp-OOP\DemoExam 04.08.1029\MXGP\obj\Debug\netcoreapp2.1\MXGP.AssemblyInfoInputs.cache
+D:\SoftUni\CSharp-OOP\DemoExam 04.08.1029\MXGP\obj\Debug\netcoreapp2.1\MXGP.AssemblyInfo.cs
+D:\SoftUni\CSharp-OOP\DemoExam 04.08.1029\MXGP\obj\Debug\netcoreapp2.1\MXGP.dll
+D:\SoftUni\CSharp-OOP\DemoExam 04.08.1029\MXGP\obj\Debug\netcoreapp2.1\MXGP.pdb

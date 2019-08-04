@@ -22,7 +22,7 @@ namespace MXGP.Models.Motorcycles
             get => this.model;
             private set
             {
-                if (string.IsNullOrWhiteSpace(value) || value.Length <= MIN_LENGTH)
+                if (string.IsNullOrWhiteSpace(value) || value.Length < MIN_LENGTH)
                 {
                     throw new ArgumentException(string.Format(ExceptionMessages.InvalidModel, value, MIN_LENGTH));
                 }
