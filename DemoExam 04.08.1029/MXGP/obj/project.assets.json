@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SoftUni\\CSharp-OOP\\MortalEngines - Exam 14.04.2019\\MortalEngines\\MortalEngines.csproj",
-      "projectName": "MortalEngines",
-      "projectPath": "D:\\SoftUni\\CSharp-OOP\\MortalEngines - Exam 14.04.2019\\MortalEngines\\MortalEngines.csproj",
+      "projectUniqueName": "C:\\Users\\Rosmari\\Desktop\\MXGP\\MXGP.csproj",
+      "projectName": "MXGP",
+      "projectPath": "C:\\Users\\Rosmari\\Desktop\\MXGP\\MXGP.csproj",
       "packagesPath": "C:\\Users\\Rosmari\\.nuget\\packages\\",
-      "outputPath": "D:\\SoftUni\\CSharp-OOP\\MortalEngines - Exam 14.04.2019\\MortalEngines\\obj\\",
+      "outputPath": "C:\\Users\\Rosmari\\Desktop\\MXGP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
