@@ -1,9 +1,9 @@
 ﻿namespace MortalEngines.Core
 {
-    using Contracts;
     using System.Linq;
     using System.Collections.Generic;
 
+    using Contracts;
     using MortalEngines.Common;
     using MortalEngines.Entities.Models;
     using MortalEngines.Entities.Contracts;
@@ -73,7 +73,7 @@
                     fighter.Name,
                     fighter.AttackPoints,
                     fighter.DefensePoints,
-                    fighter.AggressiveMode == true ? "ON" : "OFF");
+                    "ON");
             }
 
             return result;
@@ -114,19 +114,19 @@
 
             if (attackingMachine == null)
             {
-                result = string.Format(OutputMessages.MachineNotFound, attackingMachineName);
+                return result = string.Format(OutputMessages.MachineNotFound, attackingMachineName);
             }
             else if (defendingMachine == null)
             {
-                result = string.Format(OutputMessages.MachineNotFound, defendingMachineName);
+                return result = string.Format(OutputMessages.MachineNotFound, defendingMachineName);
             }
             else if (attackingMachine.HealthPoints <= 0)
             {
-                result = string.Format(OutputMessages.DeadMachineCannotAttack, attackingMachineName);
+                return result = string.Format(OutputMessages.DeadMachineCannotAttack, attackingMachineName);
             }
             else if (defendingMachine.HealthPoints <= 0)
             {
-                result = string.Format(OutputMessages.DeadMachineCannotAttack, defendingMachineName);
+                return result = string.Format(OutputMessages.DeadMachineCannotAttack, defendingMachineName);
             }
             else
             {

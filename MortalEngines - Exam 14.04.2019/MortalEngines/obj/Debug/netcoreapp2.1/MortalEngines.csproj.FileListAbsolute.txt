@@ -9,3 +9,14 @@ C:\Users\Rosmari\Desktop\Skeleton\MortalEngines\obj\Debug\netcoreapp2.1\MortalEn
 C:\Users\Rosmari\Desktop\Skeleton\MortalEngines\obj\Debug\netcoreapp2.1\MortalEngines.AssemblyInfo.cs
 C:\Users\Rosmari\Desktop\Skeleton\MortalEngines\obj\Debug\netcoreapp2.1\MortalEngines.dll
 C:\Users\Rosmari\Desktop\Skeleton\MortalEngines\obj\Debug\netcoreapp2.1\MortalEngines.pdb
+D:\SoftUni\CSharp-OOP\MortalEngines - Exam 14.04.2019\MortalEngines\bin\Debug\netcoreapp2.1\MortalEngines.deps.json
+D:\SoftUni\CSharp-OOP\MortalEngines - Exam 14.04.2019\MortalEngines\bin\Debug\netcoreapp2.1\MortalEngines.runtimeconfig.json
+D:\SoftUni\CSharp-OOP\MortalEngines - Exam 14.04.2019\MortalEngines\bin\Debug\netcoreapp2.1\MortalEngines.runtimeconfig.dev.json
+D:\SoftUni\CSharp-OOP\MortalEngines - Exam 14.04.2019\MortalEngines\bin\Debug\netcoreapp2.1\MortalEngines.dll
+D:\SoftUni\CSharp-OOP\MortalEngines - Exam 14.04.2019\MortalEngines\bin\Debug\netcoreapp2.1\MortalEngines.pdb
+D:\SoftUni\CSharp-OOP\MortalEngines - Exam 14.04.2019\MortalEngines\obj\Debug\netcoreapp2.1\MortalEngines.csprojAssemblyReference.cache
+D:\SoftUni\CSharp-OOP\MortalEngines - Exam 14.04.2019\MortalEngines\obj\Debug\netcoreapp2.1\MortalEngines.csproj.CoreCompileInputs.cache
+D:\SoftUni\CSharp-OOP\MortalEngines - Exam 14.04.2019\MortalEngines\obj\Debug\netcoreapp2.1\MortalEngines.AssemblyInfoInputs.cache
+D:\SoftUni\CSharp-OOP\MortalEngines - Exam 14.04.2019\MortalEngines\obj\Debug\netcoreapp2.1\MortalEngines.AssemblyInfo.cs
+D:\SoftUni\CSharp-OOP\MortalEngines - Exam 14.04.2019\MortalEngines\obj\Debug\netcoreapp2.1\MortalEngines.dll
+D:\SoftUni\CSharp-OOP\MortalEngines - Exam 14.04.2019\MortalEngines\obj\Debug\netcoreapp2.1\MortalEngines.pdb
