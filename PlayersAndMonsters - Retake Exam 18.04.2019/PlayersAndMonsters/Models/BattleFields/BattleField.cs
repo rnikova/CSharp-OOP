@@ -19,18 +19,47 @@
             {
                 attackPlayer.Health += 40;
 
-                //increase damagePoints of all cards with 30
+                foreach (var card in attackPlayer.CardRepository.Cards)
+                {
+                    card.DamagePoints += 30;
+                }
             }
 
             if (enemyPlayer.GetType().Name == "Beginner")
             {
                 enemyPlayer.Health += 40;
 
-                // increase damagePoints of all cards with 30
+                foreach (var card in enemyPlayer.CardRepository.Cards)
+                {
+                    card.DamagePoints += 30;
+                }
             }
 
-            enemyPlayer.TakeDamage(attackPlayer.CardRepository.Cards.Sum(x=>x.DamagePoints));
-            attackPlayer.TakeDamage(enemyPlayer.CardRepository.Cards.Sum(x => x.DamagePoints));
+            var attackerBonusHealth = attackPlayer.CardRepository.Cards.Sum(c => c.HealthPoints);
+            attackPlayer.Health += attackerBonusHealth;
+
+            var enemyBonusHealth = enemyPlayer.CardRepository.Cards.Sum(c => c.HealthPoints);
+            enemyPlayer.Health += enemyBonusHealth;
+
+            var attackerDamage = attackPlayer.CardRepository.Cards.Sum(c => c.DamagePoints);
+            var enemyDamage = enemyPlayer.CardRepository.Cards.Sum(c => c.DamagePoints);
+
+            while (true)
+            {
+                enemyPlayer.TakeDamage(attackerDamage);
+
+                if (enemyPlayer.IsDead)
+                {
+                    break;
+                }
+
+                attackPlayer.TakeDamage(enemyDamage);
+
+                if (attackPlayer.IsDead)
+                {
+                    break;
+                }
+            }
         }
     }
 }

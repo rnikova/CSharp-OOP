@@ -36,7 +36,7 @@
             get =>this.health;
             set
             {
-                if (value <= 0)
+                if (value < 0)
                 {
                     throw new ArgumentException(ExceptionMessages.HealthLessThanZero);
                 }
@@ -46,7 +46,7 @@
         }
         public ICardRepository CardRepository { get; private set; }
 
-        public bool IsDead { get; private set; }
+        public bool IsDead => this.Health <= 0;
 
         public void TakeDamage(int damagePoints)
         {
@@ -58,12 +58,16 @@
             if (this.Health - damagePoints < 0)
             {
                 this.Health = 0;
-                this.IsDead = true;
             }
             else
             {
                 this.Health -= damagePoints;
             }            
+        }
+
+        public override string ToString()
+        {
+            return $"Username: {this.Username} - Health: {this.Health} - Cards {this.CardRepository.Count}";
         }
     }
 }

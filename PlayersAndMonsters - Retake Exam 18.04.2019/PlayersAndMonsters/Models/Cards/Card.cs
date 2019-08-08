@@ -58,5 +58,10 @@
                 this.healthPoints = value;
             }
         }
+
+        public override string ToString()
+        {
+            return $"Card: {this.Name} - Damage: {this.DamagePoints}";
+        }
     }
 }
