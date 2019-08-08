@@ -1,0 +1,11 @@
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem\bin\Debug\netcoreapp2.1\ParkingSystem.deps.json
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem\bin\Debug\netcoreapp2.1\ParkingSystem.runtimeconfig.json
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem\bin\Debug\netcoreapp2.1\ParkingSystem.runtimeconfig.dev.json
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem\bin\Debug\netcoreapp2.1\ParkingSystem.dll
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem\bin\Debug\netcoreapp2.1\ParkingSystem.pdb
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem\obj\Debug\netcoreapp2.1\ParkingSystem.csprojAssemblyReference.cache
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem\obj\Debug\netcoreapp2.1\ParkingSystem.csproj.CoreCompileInputs.cache
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem\obj\Debug\netcoreapp2.1\ParkingSystem.AssemblyInfoInputs.cache
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem\obj\Debug\netcoreapp2.1\ParkingSystem.AssemblyInfo.cs
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem\obj\Debug\netcoreapp2.1\ParkingSystem.dll
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem\obj\Debug\netcoreapp2.1\ParkingSystem.pdb

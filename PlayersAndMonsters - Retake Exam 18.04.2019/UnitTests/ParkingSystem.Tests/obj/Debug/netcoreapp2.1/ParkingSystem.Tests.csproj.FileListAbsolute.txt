@@ -1,0 +1,17 @@
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem.Tests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem.Tests\bin\Debug\netcoreapp2.1\Mono.Cecil.dll
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem.Tests\bin\Debug\netcoreapp2.1\ParkingSystem.Tests.deps.json
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem.Tests\bin\Debug\netcoreapp2.1\ParkingSystem.Tests.runtimeconfig.json
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem.Tests\bin\Debug\netcoreapp2.1\ParkingSystem.Tests.runtimeconfig.dev.json
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem.Tests\bin\Debug\netcoreapp2.1\ParkingSystem.Tests.dll
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem.Tests\bin\Debug\netcoreapp2.1\ParkingSystem.Tests.pdb
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem.Tests\bin\Debug\netcoreapp2.1\ParkingSystem.dll
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem.Tests\bin\Debug\netcoreapp2.1\ParkingSystem.pdb
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem.Tests\obj\Debug\netcoreapp2.1\ParkingSystem.Tests.csprojAssemblyReference.cache
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem.Tests\obj\Debug\netcoreapp2.1\ParkingSystem.Tests.csproj.CoreCompileInputs.cache
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem.Tests\obj\Debug\netcoreapp2.1\ParkingSystem.Tests.AssemblyInfoInputs.cache
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem.Tests\obj\Debug\netcoreapp2.1\ParkingSystem.Tests.AssemblyInfo.cs
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem.Tests\obj\Debug\netcoreapp2.1\ParkingSystem.Tests.csproj.CopyComplete
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem.Tests\obj\Debug\netcoreapp2.1\ParkingSystem.Tests.dll
+D:\SoftUni\CSharp-OOP\PlayersAndMonsters - Retake Exam 18.04.2019\UnitTests\ParkingSystem.Tests\obj\Debug\netcoreapp2.1\ParkingSystem.Tests.pdb
