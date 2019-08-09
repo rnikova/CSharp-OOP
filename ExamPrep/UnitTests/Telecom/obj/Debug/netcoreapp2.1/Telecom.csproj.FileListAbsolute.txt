@@ -1,0 +1,10 @@
+C:\Users\Rosmari\Desktop\Skeleton\UnitTests\Telecom\bin\Debug\netcoreapp2.1\Telecom.deps.json
+C:\Users\Rosmari\Desktop\Skeleton\UnitTests\Telecom\bin\Debug\netcoreapp2.1\Telecom.runtimeconfig.json
+C:\Users\Rosmari\Desktop\Skeleton\UnitTests\Telecom\bin\Debug\netcoreapp2.1\Telecom.runtimeconfig.dev.json
+C:\Users\Rosmari\Desktop\Skeleton\UnitTests\Telecom\bin\Debug\netcoreapp2.1\Telecom.dll
+C:\Users\Rosmari\Desktop\Skeleton\UnitTests\Telecom\bin\Debug\netcoreapp2.1\Telecom.pdb
+C:\Users\Rosmari\Desktop\Skeleton\UnitTests\Telecom\obj\Debug\netcoreapp2.1\Telecom.csproj.CoreCompileInputs.cache
+C:\Users\Rosmari\Desktop\Skeleton\UnitTests\Telecom\obj\Debug\netcoreapp2.1\Telecom.AssemblyInfoInputs.cache
+C:\Users\Rosmari\Desktop\Skeleton\UnitTests\Telecom\obj\Debug\netcoreapp2.1\Telecom.AssemblyInfo.cs
+C:\Users\Rosmari\Desktop\Skeleton\UnitTests\Telecom\obj\Debug\netcoreapp2.1\Telecom.dll
+C:\Users\Rosmari\Desktop\Skeleton\UnitTests\Telecom\obj\Debug\netcoreapp2.1\Telecom.pdb
