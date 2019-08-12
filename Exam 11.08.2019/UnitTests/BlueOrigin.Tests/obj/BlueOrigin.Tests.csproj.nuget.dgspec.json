@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rosmari\\Desktop\\BlueOrigin.Tests\\BlueOrigin.Tests.csproj": {}
+    "D:\\SoftUni\\CSharp-OOP\\Exam 11.08.2019\\UnitTests\\BlueOrigin.Tests\\BlueOrigin.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rosmari\\Desktop\\BlueOrigin.Tests\\BlueOrigin.Tests.csproj": {
+    "D:\\SoftUni\\CSharp-OOP\\Exam 11.08.2019\\UnitTests\\BlueOrigin.Tests\\BlueOrigin.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rosmari\\Desktop\\BlueOrigin.Tests\\BlueOrigin.Tests.csproj",
+        "projectUniqueName": "D:\\SoftUni\\CSharp-OOP\\Exam 11.08.2019\\UnitTests\\BlueOrigin.Tests\\BlueOrigin.Tests.csproj",
         "projectName": "BlueOrigin.Tests",
-        "projectPath": "C:\\Users\\Rosmari\\Desktop\\BlueOrigin.Tests\\BlueOrigin.Tests.csproj",
+        "projectPath": "D:\\SoftUni\\CSharp-OOP\\Exam 11.08.2019\\UnitTests\\BlueOrigin.Tests\\BlueOrigin.Tests.csproj",
         "packagesPath": "C:\\Users\\Rosmari\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rosmari\\Desktop\\BlueOrigin.Tests\\obj\\",
+        "outputPath": "D:\\SoftUni\\CSharp-OOP\\Exam 11.08.2019\\UnitTests\\BlueOrigin.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\Rosmari\\Desktop\\BlueOrigin\\BlueOrigin.csproj": {
-                "projectPath": "C:\\Users\\Rosmari\\Desktop\\BlueOrigin\\BlueOrigin.csproj"
+              "D:\\SoftUni\\CSharp-OOP\\Exam 11.08.2019\\UnitTests\\BlueOrigin\\BlueOrigin.csproj": {
+                "projectPath": "D:\\SoftUni\\CSharp-OOP\\Exam 11.08.2019\\UnitTests\\BlueOrigin\\BlueOrigin.csproj"
               }
             }
           }
@@ -72,14 +72,14 @@
         }
       }
     },
-    "C:\\Users\\Rosmari\\Desktop\\BlueOrigin\\BlueOrigin.csproj": {
+    "D:\\SoftUni\\CSharp-OOP\\Exam 11.08.2019\\UnitTests\\BlueOrigin\\BlueOrigin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rosmari\\Desktop\\BlueOrigin\\BlueOrigin.csproj",
+        "projectUniqueName": "D:\\SoftUni\\CSharp-OOP\\Exam 11.08.2019\\UnitTests\\BlueOrigin\\BlueOrigin.csproj",
         "projectName": "BlueOrigin",
-        "projectPath": "C:\\Users\\Rosmari\\Desktop\\BlueOrigin\\BlueOrigin.csproj",
+        "projectPath": "D:\\SoftUni\\CSharp-OOP\\Exam 11.08.2019\\UnitTests\\BlueOrigin\\BlueOrigin.csproj",
         "packagesPath": "C:\\Users\\Rosmari\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rosmari\\Desktop\\BlueOrigin\\obj\\",
+        "outputPath": "D:\\SoftUni\\CSharp-OOP\\Exam 11.08.2019\\UnitTests\\BlueOrigin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

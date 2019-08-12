@@ -78,6 +78,8 @@ namespace BlueOrigin.Tests
                 spaceship.Add(astronaut);
             }
 
+            astronaut = new Astronaut("name", 10);
+
             Assert.Throws<InvalidOperationException>(() => spaceship.Add(astronaut));
         }
 
