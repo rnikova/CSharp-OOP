@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using ViceCity.Models.Guns.Contracts;
 using ViceCity.Models.Players.Contracts;
 using ViceCity.Repositories;
@@ -13,14 +11,14 @@ namespace ViceCity.Models.Players
     {
         private string name;
         private int lifePoints;
-        private readonly GunRepository gunRepository;
 
         protected Player(string name, int lifePoints)
         {
             this.Name = name;
             this.LifePoints = lifePoints;
+            this.IsAlive = true;
 
-            this.gunRepository = new GunRepository();
+            this.GunRepository = new GunRepository();
         }
 
         public string Name
@@ -37,9 +35,9 @@ namespace ViceCity.Models.Players
             }
         }
 
-        public bool IsAlive => this.LifePoints > 0;
+        public bool IsAlive { get; private set; }
 
-        public IRepository<IGun> GunRepository => this.gunRepository;
+        public IRepository<IGun> GunRepository { get; private set; }
 
         public int LifePoints
         {
@@ -57,11 +55,14 @@ namespace ViceCity.Models.Players
 
         public void TakeLifePoints(int points)
         {
-            this.LifePoints -= points;
-
-            if (this.LifePoints <= 0)
+            if (this.LifePoints - points <= 0)
             {
                 this.LifePoints = 0;
+                this.IsAlive = false;
+            }
+            else
+            {
+                this.LifePoints -= points;
             }
         }
     }

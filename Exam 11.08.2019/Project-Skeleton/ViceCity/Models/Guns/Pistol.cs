@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ViceCity.Models.Guns
+﻿namespace ViceCity.Models.Guns
 {
     public class Pistol : Gun
     {
@@ -10,22 +6,23 @@ namespace ViceCity.Models.Guns
         private const int InitialTotalBullets = 100;
         private const int InitialShoots = 1;
 
-        public Pistol(string name) 
+        public Pistol(string name)
             : base(name, InitialBulletsPerBarrel, InitialTotalBullets)
         {
         }
 
         public override int Fire()
         {
-            this.BulletsPerBarrel -= InitialShoots;
-
-            if (this.BulletsPerBarrel <= 0)
+            if (this.BulletsPerBarrel - InitialShoots <= 0 && this.TotalBullets > 0)
             {
-                if (this.TotalBullets - InitialBulletsPerBarrel > 0)
-                {
-                    this.TotalBullets -= InitialBulletsPerBarrel;
-                    this.BulletsPerBarrel = InitialBulletsPerBarrel;
-                }
+                this.BulletsPerBarrel--;
+                this.BulletsPerBarrel = InitialBulletsPerBarrel;
+                this.TotalBullets -= InitialBulletsPerBarrel;
+            }
+
+            if (this.CanFire == true)
+            {
+                this.BulletsPerBarrel--;
             }
 
             return InitialShoots;

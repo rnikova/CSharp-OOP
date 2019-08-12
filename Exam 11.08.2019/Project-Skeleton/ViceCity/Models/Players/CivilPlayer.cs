@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using ViceCity.Models.Players.Contracts;
+﻿using ViceCity.Models.Players.Contracts;
 
 namespace ViceCity.Models.Players
 {

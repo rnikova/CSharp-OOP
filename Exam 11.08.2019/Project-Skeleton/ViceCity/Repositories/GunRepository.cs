@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using ViceCity.Models.Guns.Contracts;
 using ViceCity.Repositories.Contracts;
 
@@ -20,7 +18,7 @@ namespace ViceCity.Repositories
 
         public void Add(IGun model)
         {
-            if (!this.models.Contains(model))
+            if (!this.models.Any(m => m.Name == model.Name))
             {
                 this.models.Add(model);
             }

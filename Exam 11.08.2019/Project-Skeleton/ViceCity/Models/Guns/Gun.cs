@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using ViceCity.Models.Guns.Contracts;
 
 namespace ViceCity.Models.Guns

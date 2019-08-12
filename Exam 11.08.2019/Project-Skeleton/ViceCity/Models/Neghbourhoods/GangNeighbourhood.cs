@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using ViceCity.Models.Guns;
 using ViceCity.Models.Guns.Contracts;
 using ViceCity.Models.Neghbourhoods.Contracts;
 using ViceCity.Models.Players.Contracts;
@@ -13,48 +10,38 @@ namespace ViceCity.Models.Neghbourhoods
     {
         public GangNeighbourhood()
         {
-
         }
 
         public void Action(IPlayer mainPlayer, ICollection<IPlayer> civilPlayers)
         {
-            //List<IGun> mainPlayerGuns = mainPlayer.GunRepository.Models.ToList();
-            IGun currentGun = null;
-
-            var currentCivilPlayers = civilPlayers.ToList();
-            var currentCivil = currentCivilPlayers[0];
-            IGun civilGun = null;
-            //currentCivilPlayers.RemoveAt(0);
-
-            while (civilPlayers.Any() && mainPlayer.GunRepository.Models.Count > 0)
+            while (true)
             {
-                currentGun = mainPlayer.GunRepository.Models.First();
-                // mainPlayerGuns.Remove(currentGun);
-                currentCivil.TakeLifePoints(currentGun.Fire());
+                IGun gun = mainPlayer.GunRepository.Models.FirstOrDefault(g => g.CanFire == true);
+                IPlayer target = civilPlayers.FirstOrDefault(t => t.IsAlive == true);
 
-                if (currentGun.TotalBullets <= 0)
+                if (gun == null || target == null)
                 {
-                    mainPlayer.GunRepository.Remove(currentGun);
-                    currentGun = mainPlayer.GunRepository.Models.First();
+                    break;
                 }
 
-                if (!currentCivil.IsAlive)
+                int damagePoints = gun.Fire();
+                target.TakeLifePoints(damagePoints);
+            }
+
+            while (true)
+            {
+                IPlayer player = civilPlayers.FirstOrDefault(t => t.IsAlive == true);
+                IGun gun = player.GunRepository.Models.FirstOrDefault(g => g.CanFire == true);
+
+                if (player == null || gun == null)
                 {
-                    currentCivilPlayers.RemoveAt(0);
-                    currentCivil = currentCivilPlayers[0];
+                    break;
                 }
 
-                civilGun = currentCivil.GunRepository.Models.First();
+                int damagePoints = gun.Fire();
+                mainPlayer.TakeLifePoints(damagePoints);
 
-                mainPlayer.TakeLifePoints(civilGun.Fire());
-
-                if (civilGun.TotalBullets <= 0)
-                {
-                    currentCivil.GunRepository.Remove(civilGun);
-                    civilGun = currentCivil.GunRepository.Models.First();
-                }
-
-                if (!mainPlayer.IsAlive)
+                if (mainPlayer.IsAlive == false)
                 {
                     break;
                 }
@@ -62,3 +49,4 @@ namespace ViceCity.Models.Neghbourhoods
         }
     }
 }
+

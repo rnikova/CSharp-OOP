@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using ViceCity.Core.Contracts;
@@ -16,7 +15,6 @@ namespace ViceCity.Core
         private MainPlayer mainPlayer;
         private readonly List<IPlayer> civilPlayers;
         private readonly List<IGun> guns;
-        private int civilPlayersCOunt = 0;
 
         public Controller()
         {
@@ -61,14 +59,6 @@ namespace ViceCity.Core
 
                 if (name == "Vercetti")
                 {
-                    //if (this.mainPlayer.GunRepository.Models.Contains(gunToPlayer))
-                    //{
-                    //    int index = this.guns.IndexOf(gunToPlayer);
-                    //    gunToPlayer = this.guns.Skip(index).First();
-                    //}
-
-                    //if (gunToPlayer != null)
-
                     this.mainPlayer.GunRepository.Add(gunToPlayer);
                     this.guns.RemoveAt(0);
 
@@ -85,44 +75,40 @@ namespace ViceCity.Core
                 this.guns.RemoveAt(0);
                 return string.Format(OutputMessages.CivilPlayerAddGun, gunToPlayer.Name, name);
             }
-            
+
         }
 
         public string AddPlayer(string name)
         {
             CivilPlayer civilPlayer = new CivilPlayer(name);
             this.civilPlayers.Add(civilPlayer);
-            this.civilPlayersCOunt++;
 
             return string.Format(OutputMessages.AddPlayer, name);
         }
 
         public string Fight()
         {
-            var civilsAllPoints = this.civilPlayers.Sum(c => c.LifePoints);
+            MainPlayer mainPlayer = new MainPlayer();
 
             GangNeighbourhood gangNeighbourhood = new GangNeighbourhood();
-            gangNeighbourhood.Action(mainPlayer, this.civilPlayers);
+            gangNeighbourhood.Action(mainPlayer, civilPlayers);
 
+            StringBuilder sb = new StringBuilder();
 
-            if (civilsAllPoints != this.civilPlayers.Sum(c => c.LifePoints))
+            if (civilPlayers.Any(p => p.IsAlive == true) &&
+                mainPlayer.LifePoints == 100)
             {
-                StringBuilder sb = new StringBuilder();
-
-                sb.AppendLine("A fight happened:")
-                    .AppendLine($"Tommy live points: {this.mainPlayer.LifePoints}!")
-                    .AppendLine($"Tommy has killed: {this.civilPlayersCOunt - this.civilPlayers.Count} players!")
-                    .AppendLine($"Left Civil Players: {this.civilPlayers.Count}!");
-
-                return sb.ToString().TrimEnd();
+                sb.AppendLine("Everything is okay!");
+            }
+            else
+            {
+                sb.AppendLine("A fight happened:");
+                sb.AppendLine($"Tommy live points: {mainPlayer.LifePoints}!");
+                sb.AppendLine($"Tommy has killed: {civilPlayers.Where(p => p.IsAlive == false).Count()} players!");
+                sb.AppendLine($"Left Civil Players: {civilPlayers.Where(p => p.IsAlive == true).Count()}!");
             }
 
-            return $"Everything is okay!";
+            return sb.ToString().TrimEnd();
         }
-
-        //public void Exit()
-        //{
-        //    Environment.Exit(0);
-        //}
     }
 }
