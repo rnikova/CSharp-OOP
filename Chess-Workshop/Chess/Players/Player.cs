@@ -1,7 +1,7 @@
 ﻿namespace Chess.Players
 {
     using Chess.Common;
-    using Chess.Figures;
+    using Chess.Figures.Contracts;
     using System;
     using System.Collections.Generic;
 

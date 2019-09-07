@@ -1,12 +1,11 @@
-﻿
-namespace Chess.Figures
+﻿namespace Chess.Figures
 {
     using Chess.Common;
     using Chess.Figures.Contracts;
 
-    public class Pawn : BaseFigure, IFigure
+    public class Bishop : BaseFigure, IFigure
     {
-        public Pawn(ChessColor color)
+        public Bishop(ChessColor color)
             : base(color)
         {
         }

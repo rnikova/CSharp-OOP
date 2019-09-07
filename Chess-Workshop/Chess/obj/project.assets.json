@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rosmari\\Desktop\\Chess\\Chess\\Chess.csproj",
+      "projectUniqueName": "D:\\SoftUni\\CSharp-OOP\\Chess-Workshop\\Chess\\Chess.csproj",
       "projectName": "Chess",
-      "projectPath": "C:\\Users\\Rosmari\\Desktop\\Chess\\Chess\\Chess.csproj",
+      "projectPath": "D:\\SoftUni\\CSharp-OOP\\Chess-Workshop\\Chess\\Chess.csproj",
       "packagesPath": "C:\\Users\\Rosmari\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rosmari\\Desktop\\Chess\\Chess\\obj\\",
+      "outputPath": "D:\\SoftUni\\CSharp-OOP\\Chess-Workshop\\Chess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
