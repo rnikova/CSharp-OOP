@@ -16,6 +16,6 @@
 
         public const char MaximumColValueOnBoard = 'h';
 
-        
+        public const int StandartGameNumberOfPlayers = 2;
     }
 }
