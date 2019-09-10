@@ -3,21 +3,20 @@
     using System;
     using System.Threading;
     using Chess.Board;
+    using Chess.Common;
     using Chess.Common.Concole;
     using Chess.Renderers.Contracts;
 
     public class ConsoleRenderer : Irenderer
     {
         private const string Logo = "MY CHESS";
-        private const int CharacterPerRowPerFigure = 9;
-        private const int CharacterPerColPerFigure = 9;
         private const ConsoleColor DarkSquareConsoleColor = ConsoleColor.DarkGray;
         private const ConsoleColor LightSquareConsoleColor = ConsoleColor.Gray;
 
         public void RenderBoard(IBoard board)
         {
-            var startRowPrint = Console.WindowHeight / 2 - (board.TotalRows / 2) * CharacterPerRowPerFigure;
-            var startColPrint = Console.WindowWidth / 2 - (board.TotalCols / 2) * CharacterPerColPerFigure;
+            var startRowPrint = Console.WindowWidth / 2 - (board.TotalRows / 2) * ConsoleConstants.CharacterPerRowPerFigure;
+            var startColPrint = Console.WindowHeight / 2 - (board.TotalCols / 2) * ConsoleConstants.CharacterPerColPerFigure;
 
             var currentRowPrint = startRowPrint;
             var currentColPrint = startColPrint;
@@ -30,20 +29,29 @@
             {
                 for (int left = 0; left < board.TotalCols; left++)
                 {
-                    currentRowPrint = startRowPrint + left * CharacterPerColPerFigure;
-                    currentColPrint = startColPrint + top * CharacterPerRowPerFigure;
+                    currentColPrint = startRowPrint + left * ConsoleConstants.CharacterPerColPerFigure;
+                    currentRowPrint = startColPrint + top * ConsoleConstants.CharacterPerRowPerFigure;
+
+                    ConsoleColor backgroudColor;
 
                     if (counter % 2 == 0)
                     {
+                        backgroudColor = DarkSquareConsoleColor;
                         Console.BackgroundColor = DarkSquareConsoleColor;
                     }
                     else
                     {
+                        backgroudColor = LightSquareConsoleColor;
                         Console.BackgroundColor = LightSquareConsoleColor;
                     }
 
-                    Console.SetCursorPosition(currentColPrint, currentRowPrint);
-                    Console.Write(" ");
+                    var position = Position.FromArrayCoordinates(top, left, board.TotalRows);
+                    var figure = board.GetFigureAtPosition(position);
+
+                    ConsoleHelpers.PrintFigure(figure, backgroudColor, currentRowPrint, currentColPrint);
+
+                    
+
 
                     counter++;
                 }
