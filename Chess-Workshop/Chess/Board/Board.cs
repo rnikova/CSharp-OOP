@@ -41,6 +41,13 @@
 
             this.board[arrRow, arrCol] = null;
         }
+        public IFigure GetFigureAtPosition(Position position)
+        {
+            int arrRow = GetArrayRow(position.Row);
+            int arrCol = GetArrayCol(position.Col);
+
+            return this.board[arrRow, arrCol];
+        }
 
         private int GetArrayRow(int chessRow)
         {
@@ -66,5 +73,6 @@
                 throw new IndexOutOfRangeException(GlobalErrorMessages.OutOfRangeColPosition);
             }
         }
+
     }
 }

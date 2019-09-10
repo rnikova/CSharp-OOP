@@ -27,7 +27,11 @@
 
         public void Initialize(IGameInitializationStrategy gameInitializationStrategy)
         {
-            var players = this.input.GetPlayers(GlobalConstants.StandartGameNumberOfPlayers);
+            var players = new List<IPlayer>
+            {new Player("Pesho", ChessColor.Black),
+            new Player("Gosho", ChessColor.White)
+            };
+            //this.input.GetPlayers(GlobalConstants.StandartGameNumberOfPlayers);
 
             gameInitializationStrategy.Initialize(players, this.board);
             this.renderer.RenderBoard(board);
