@@ -23,7 +23,7 @@
 
             Console.BackgroundColor = ConsoleColor.White;
 
-            int counter = 0;
+            int counter = 1;
 
             for (int top = 0; top < board.TotalRows; top++)
             {

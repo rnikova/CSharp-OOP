@@ -1,10 +1,88 @@
 ﻿namespace Chess.Common.Concole
 {
+    using Chess.Figures;
     using Chess.Figures.Contracts;
     using System;
+    using System.Collections.Generic;
 
     public static class ConsoleHelpers
     {
+        private static IDictionary<string, bool[,]> patterns = new Dictionary<string, bool[,]>
+        {
+            {"Pawn", new bool[,]
+                {
+                    {false, false, false, false, false, false, false, false, false },
+                    {false, false, false, false, false, false, false, false, false },
+                    {false, false, false, false, true, false, false, false, false },
+                    {false, false, false, true, true, true, false, false, false },
+                    {false, false, false, true, true, true, false, false, false },
+                    {false, false, false, false, true, false, false, false, false },
+                    {false, false, false, true, true, true, false, false, false },
+                    {false, false, true, true, true, true, true, false, false },
+                    {false, false, false, false, false, false, false, false, false }
+                } },
+            {"Rook", new bool[,]
+                {
+                    {false, false, false, false, false, false, false, false, false },
+                    {false, false, true, false, true, false, true, false, false },
+                    {false, false, false, true, true, true, false, false, false  },
+                    {false, false, false, true, true, true, false, false, false },
+                    {false, false, false, true, true, true, false, false, false },
+                    {false, false, false, true, true, true, false, false, false  },
+                    {false, false, true, true, true, true, true, false, false  },
+                    {false, false, true, true, true, true, true, false, false  },
+                    {false, false, false, false, false, false, false, false, false }
+                } },
+            { "Knight", new bool[,]
+                {
+                    {false, false, false, false, false, false, false, false, false },
+                    {false, false, false, false, true, true, false, false, false },
+                    {false, false, false, true, true, true, true, false, false  },
+                    {false, false, true, true, true, false, true, false, false },
+                    {false, false, true, true, false, true, true, false, false },
+                    {false, false, false, false, true, true, true, false, false  },
+                    {false, false, false, true, true, true, false, false, false  },
+                    {false, false, true, true, true, true, true, false, false  },
+                    {false, false, false, false, false, false, false, false, false }
+                } },
+            {"Bishop", new bool[,]
+                {
+                    {false, false, false, false, false, false, false, false, false },
+                    {false, false, false, false, true, false, false, false, false },
+                    {false, false, false, true, true, true, false, false, false },
+                    {false, false, true, true, false, true, true, false, false },
+                    {false, false, true, false, false, false, true, false, false },
+                    {false, false, false, true, false, true, false, false, false },
+                    {false, false, false, false, true, false, false, false, false },
+                    {false, true, true, true, false, true, true, true, false },
+                    {false, false, false, false, false, false, false, false, false }
+                } },
+            {"King", new bool[,]
+                {
+                    {false, false, false, false, false, false, false, false, false },
+                    {false, false, false, false, true, false, false, false, false },
+                    {false, false, false, true, true, true, false, false, false },
+                    {false, true, true, false, true, false, true, true, false },
+                    {false, true, true, true, false, true, true, true, false },
+                    {false, true, true, true, true, true, true, true, false },
+                    {false, false, true, true, true, true, true, false, false },
+                    {false, false, true, true, true, true, true, false, false },
+                    {false, false, false, false, false, false, false, false, false }
+                } },
+            {"Queen", new bool[,]
+                {
+                    {false, false, false, false, false, false, false, false, false },
+                    {false, false, false, false, true, false, false, false, false },
+                    {false, false, true, false, true, false, true, false, false },
+                    {false, false, false, true, false, true, false, false, false },
+                    {false, true, false, true, true, true, false, true, false },
+                    {false, false, true, false, true, false, true, false, false },
+                    {false, false, true, true, false, true, true, false, false },
+                    {false, false, true, true, true, true, true, false, false },
+                    {false, false, false, false, false, false, false, false, false }
+                } }
+        };
+
         public static ConsoleColor ToConsoleColor(this ChessColor chessColor)
         {
             switch (chessColor)
@@ -32,6 +110,33 @@
             if (figure == null)
             {
                 PrintEmtySquare(backgroudColor, top, left);
+                return;
+            }
+
+            if (!patterns.ContainsKey(figure.GetType().Name))
+            {
+                return;
+            }
+
+            var figurePatern = patterns[figure.GetType().Name];
+
+            for (int i = 0; i < figurePatern.GetLength(0); i++)
+            {
+                for (int k = 0; k < figurePatern.GetLength(1); k++)
+                {
+                    Console.SetCursorPosition(left + k, top + i);
+
+                    if (figurePatern[i, k])
+                    {
+                        Console.BackgroundColor = figure.Color.ToConsoleColor();
+                    }
+                    else
+                    {
+                        Console.BackgroundColor = backgroudColor;
+                    }
+
+                    Console.Write(" ");
+                }
             }
         }
 
