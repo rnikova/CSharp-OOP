@@ -8,13 +8,16 @@
     using Chess.InputProviders.Contracts;
     using Chess.Common;
     using Chess.Board;
+    using System;
+    using System.Linq;
 
     public class StandartTwoPlayerEngine : IChessEngine
     {
-        private readonly IEnumerable<IPlayer> players;
+        private IList<IPlayer> players;
         private readonly Irenderer renderer;
         private readonly IInputProvider input;
         private readonly IBoard board;
+        private int currentPlayerIndex;
 
         public StandartTwoPlayerEngine(Irenderer renderer, IInputProvider inputProvider)
         {
@@ -27,19 +30,58 @@
 
         public void Initialize(IGameInitializationStrategy gameInitializationStrategy)
         {
-            var players = new List<IPlayer>
+            this.players = new List<IPlayer>
             {new Player("Pesho", ChessColor.Black),
             new Player("Gosho", ChessColor.White)
             };
             //this.input.GetPlayers(GlobalConstants.StandartGameNumberOfPlayers);
 
-            gameInitializationStrategy.Initialize(players, this.board);
+            this.SetFirstPlayerIndex();
+            gameInitializationStrategy.Initialize(this.players, this.board);
             this.renderer.RenderBoard(board);
         }
 
         public void Start()
         {
-            throw new System.NotImplementedException();
+            while (true)
+            {
+                try
+                {
+                    var player = this.GetNextPlayer();
+                    var move = this.input.GetNextPlayerMove(player);
+                }
+                catch (Exception ex)
+                {
+                    this.currentPlayerIndex--;
+                    this.renderer.PrintErrorMessage(ex.Message);
+                }
+
+            }
+
+        }
+
+        private void SetFirstPlayerIndex()
+        {
+            for (int i = 0; i < this.players.Count; i++)
+            {
+                if (this.players[i].Color == ChessColor.White)
+                {
+                    this.currentPlayerIndex = i;
+                    return;
+                }
+            }
+        }
+
+        private IPlayer GetNextPlayer()
+        {
+            this.currentPlayerIndex++;
+
+            if (this.currentPlayerIndex >= this.players.Count)
+            {
+                this.currentPlayerIndex = 0;
+            }
+
+            return this.players[currentPlayerIndex];
         }
 
         public void WinnigConditions()

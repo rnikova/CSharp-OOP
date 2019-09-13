@@ -7,5 +7,7 @@
         void RenderBoard(IBoard board);
 
         void RenderMainMenu();
+
+        void PrintErrorMessage(string errorMessage);
     }
 }

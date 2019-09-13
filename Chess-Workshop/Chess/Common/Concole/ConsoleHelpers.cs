@@ -1,6 +1,5 @@
 ﻿namespace Chess.Common.Concole
 {
-    using Chess.Figures;
     using Chess.Figures.Contracts;
     using System;
     using System.Collections.Generic;
@@ -150,6 +149,29 @@
                     Console.Write(" ");
                 }
             }
+        }
+
+        public static Move CreateMoveFromCommand(string command)
+        {
+            var positionAsStringParts = command.Split('-' );
+
+            if (positionAsStringParts.Length != 2)
+            {
+                throw new InvalidOperationException("Invalid command!");
+            }
+            var fromAsString = positionAsStringParts[0];
+            var toAsString = positionAsStringParts[1];
+
+            var fromPosition = Position.FromChessCoordinates(fromAsString[1] - '0', fromAsString[0]);
+            var toPosition = Position.FromChessCoordinates(toAsString[1] - '0', toAsString[0]);
+
+            return new Move(fromPosition, toPosition);
+        }
+
+        public static void ClearRow(int row)
+        {
+            Console.SetCursorPosition(0, row);
+            Console.Write(new string(' ', Console.WindowWidth));
         }
     }
 }

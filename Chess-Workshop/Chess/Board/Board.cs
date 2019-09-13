@@ -24,7 +24,7 @@
         {
             ObjectValidator.CheckIfObjectIsNull(figure, GlobalErrorMessages.NullFigure);
 
-            this.CheckIfPositionIsValid(position);
+            Position.CheckIfValid(position);
 
             int arrRow = GetArrayRow(position.Row);
             int arrCol = GetArrayCol(position.Col);
@@ -34,7 +34,7 @@
 
         public void RemoveFigure(Position position)
         {
-            this.CheckIfPositionIsValid(position);
+            Position.CheckIfValid(position);
 
             int arrRow = GetArrayRow(position.Row);
             int arrCol = GetArrayCol(position.Col);
@@ -58,21 +58,5 @@
         {
             return chessCol - 'a';
         }
-
-        private void CheckIfPositionIsValid(Position position)
-        {
-            if (position.Row < GlobalConstants.MinimumRowValueOnBoard
-                || position.Row > GlobalConstants.MaximumRowValueOnBoard)
-            {
-                throw new IndexOutOfRangeException(GlobalErrorMessages.OutOfRangeRowPosition);
-            }
-
-            if (position.Col < GlobalConstants.MinimumColValueOnBoard
-                || position.Col > GlobalConstants.MaximumColValueOnBoard)
-            {
-                throw new IndexOutOfRangeException(GlobalErrorMessages.OutOfRangeColPosition);
-            }
-        }
-
     }
 }

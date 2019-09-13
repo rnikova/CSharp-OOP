@@ -29,5 +29,15 @@
 
             return players;
         }
+        public Move GetNextPlayerMove(IPlayer player)
+        {
+            Console.SetCursorPosition(Console.WindowWidth / 2 - 8, 2);
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.Write("{0} is next: ", player.Name);
+
+            var positionAsString = Console.ReadLine().Trim().ToLower();
+
+            return ConsoleHelpers.CreateMoveFromCommand(positionAsString);
+        }
     }
 }

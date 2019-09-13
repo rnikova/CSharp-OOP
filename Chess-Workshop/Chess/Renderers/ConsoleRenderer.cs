@@ -13,6 +13,28 @@
         private const ConsoleColor DarkSquareConsoleColor = ConsoleColor.DarkGray;
         private const ConsoleColor LightSquareConsoleColor = ConsoleColor.Gray;
 
+        public ConsoleRenderer()
+        {
+            if (Console.WindowWidth < 100 || Console.WindowHeight < 80)
+            {
+                Console.BackgroundColor = ConsoleColor.Black;
+                Console.ForegroundColor = ConsoleColor.Gray;
+                Console.Clear();
+
+                Console.WriteLine("Please, set the Console window and buffer size to 100x80.");
+                Environment.Exit(0);
+            }
+        }
+
+        public void PrintErrorMessage(string errorMessage)
+        {
+            Console.Write(new string(' ', Console.WindowWidth));
+            Console.SetCursorPosition(Console.WindowWidth / 2 - 8, ConsoleConstants.ConsoleRowForPlayerIO);
+            Console.Write(errorMessage);
+            Thread.Sleep(1500);
+            ConsoleHelpers.ClearRow(ConsoleConstants.ConsoleRowForPlayerIO);
+        }
+
         public void RenderBoard(IBoard board)
         {
             var startRowPrint = Console.WindowWidth / 2 - (board.TotalRows / 2) * ConsoleConstants.CharacterPerRowPerFigure;
@@ -58,9 +80,6 @@
 
                 counter++;
             }
-
-
-            Console.ReadLine();
         }
 
         public void RenderMainMenu()

@@ -1,4 +1,6 @@
-﻿namespace Chess.Common
+﻿using System;
+
+namespace Chess.Common
 {
     public struct Position
     {
@@ -7,6 +9,29 @@
             return new Position(totalRows - arrRow, (char)(arrCol + 'a'));
         }
 
+        public static Position FromChessCoordinates(int chessRow, char chessCol)
+        {
+            var newPosition = new Position(chessRow, chessCol);
+            CheckIfValid(newPosition);
+
+            return newPosition;
+        }
+
+        public static void CheckIfValid(Position position)
+        {
+            if (position.Row < GlobalConstants.MinimumRowValueOnBoard
+                 || position.Row > GlobalConstants.MaximumRowValueOnBoard)
+            {
+                throw new IndexOutOfRangeException(GlobalErrorMessages.OutOfRangeRowPosition);
+            }
+
+            if (position.Col < GlobalConstants.MinimumColValueOnBoard
+                || position.Col > GlobalConstants.MaximumColValueOnBoard)
+            {
+                throw new IndexOutOfRangeException(GlobalErrorMessages.OutOfRangeColPosition);
+            }
+
+        }
         public Position(int row, char col)
             : this()
         {
