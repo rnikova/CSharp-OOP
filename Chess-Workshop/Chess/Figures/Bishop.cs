@@ -12,9 +12,9 @@
         {
         }
 
-        public override ICollection<IMovement> Move()
+        public override ICollection<IMovement> Move(IMovementStrategy movementStrategy)
         {
-            throw new System.NotImplementedException();
+            return movementStrategy.GetMovements(this.GetType().Name);
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿namespace Chess.Engine
 {
+    using System;
     using System.Collections.Generic;
     using Chess.Players;
     using Chess.Engine.Contracts;
@@ -8,8 +9,9 @@
     using Chess.InputProviders.Contracts;
     using Chess.Common;
     using Chess.Board;
-    using System;
     using Chess.Figures.Contracts;
+    using Chess.Movements.Contracts;
+    using Chess.Movements.Strategies;
 
     public class StandartTwoPlayerEngine : IChessEngine
     {
@@ -17,6 +19,8 @@
         private readonly Irenderer renderer;
         private readonly IInputProvider input;
         private readonly IBoard board;
+        private readonly IMovementStrategy movementStrategy;
+
         private int currentPlayerIndex;
 
         public StandartTwoPlayerEngine(Irenderer renderer, IInputProvider inputProvider)
@@ -24,6 +28,7 @@
             this.renderer = renderer;
             this.input = inputProvider;
             this.board = new Board();
+            this.movementStrategy = new NormalMovementStrategy();
         }
 
         public IEnumerable<IPlayer> Players => new List<IPlayer>(this.players);
@@ -56,12 +61,15 @@
                     this.CheckIfPlayerOwnsFigure(player, figure, from);
                     this.CheckIfToPositionIsEmpty(figure, to);
 
-                    var availableMovements = figure.Move();
+                    var availableMovements = figure.Move(this.movementStrategy);
 
                     foreach (var movement in availableMovements)
                     {
                         movement.ValidateMove(figure, board, move);
                     }
+
+                    board.MoveFigureAtPosition(figure, from, to);
+                    this.renderer.RenderBoard(board);
                 }
                 catch (Exception ex)
                 {

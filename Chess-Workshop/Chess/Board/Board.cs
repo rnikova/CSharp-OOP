@@ -48,6 +48,16 @@
 
             return this.board[arrRow, arrCol];
         }
+        public void MoveFigureAtPosition(IFigure figure, Position from, Position to)
+        {
+            int arrFromRow = GetArrayRow(from.Row);
+            int arrFromCol = GetArrayCol(from.Col);
+            this.board[arrFromRow, arrFromCol] = null;
+
+            int arrToRow = GetArrayRow(to.Row);
+            int arrToCol = GetArrayCol(to.Col);
+            this.board[arrToRow, arrToCol] = figure;
+        }
 
         private int GetArrayRow(int chessRow)
         {
