@@ -4,6 +4,6 @@
     {
         public const int CharacterPerRowPerFigure = 9;
         public const int CharacterPerColPerFigure = 9;
-        public const int ConsoleRowForPlayerIO = 2;
+        public const int ConsoleRowForPlayerIO = 0;
     }
 }

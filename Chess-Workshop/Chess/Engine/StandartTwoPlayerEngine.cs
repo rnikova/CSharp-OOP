@@ -9,7 +9,7 @@
     using Chess.Common;
     using Chess.Board;
     using System;
-    using System.Linq;
+    using Chess.Figures.Contracts;
 
     public class StandartTwoPlayerEngine : IChessEngine
     {
@@ -49,6 +49,19 @@
                 {
                     var player = this.GetNextPlayer();
                     var move = this.input.GetNextPlayerMove(player);
+                    var from = move.From;
+                    var to = move.To;
+                    var figure = this.board.GetFigureAtPosition(from);
+
+                    this.CheckIfPlayerOwnsFigure(player, figure, from);
+                    this.CheckIfToPositionIsEmpty(figure, to);
+
+                    var availableMovements = figure.Move();
+
+                    foreach (var movement in availableMovements)
+                    {
+                        movement.ValidateMove(figure, board, move);
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -60,13 +73,36 @@
 
         }
 
+        private void CheckIfToPositionIsEmpty(IFigure figure, Position to)
+        {
+            var figureAtPosition = this.board.GetFigureAtPosition(to);
+
+            if (figureAtPosition != null && figureAtPosition.Color == figure.Color)
+            {
+                throw new InvalidOperationException(string.Format("You already have a figure at {0}{1}!", to.Col, to.Row));
+            }
+        }
+
+        private void CheckIfPlayerOwnsFigure(IPlayer player, IFigure figure, Position from)
+        {
+            if (figure == null)
+            {
+                throw new InvalidOperationException(string.Format("Position {0}{1} is empty!", from.Col, from.Row));
+            }
+
+            if (figure.Color != player.Color)
+            {
+                throw new InvalidOperationException(string.Format("Figure at {0}{1} is not yours!", from.Col, from.Row));
+            }
+        }
+
         private void SetFirstPlayerIndex()
         {
             for (int i = 0; i < this.players.Count; i++)
             {
                 if (this.players[i].Color == ChessColor.White)
                 {
-                    this.currentPlayerIndex = i;
+                    this.currentPlayerIndex = i - 1;
                     return;
                 }
             }

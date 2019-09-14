@@ -31,7 +31,8 @@
         }
         public Move GetNextPlayerMove(IPlayer player)
         {
-            Console.SetCursorPosition(Console.WindowWidth / 2 - 8, 2);
+            ConsoleHelpers.ClearRow(ConsoleConstants.ConsoleRowForPlayerIO);
+            Console.SetCursorPosition(Console.WindowWidth / 2 - 8, ConsoleConstants.ConsoleRowForPlayerIO);
             Console.BackgroundColor = ConsoleColor.Black;
             Console.Write("{0} is next: ", player.Name);
 

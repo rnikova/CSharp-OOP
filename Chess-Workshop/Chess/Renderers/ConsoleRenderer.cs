@@ -28,10 +28,11 @@
 
         public void PrintErrorMessage(string errorMessage)
         {
+            ConsoleHelpers.ClearRow(ConsoleConstants.ConsoleRowForPlayerIO);
             Console.Write(new string(' ', Console.WindowWidth));
-            Console.SetCursorPosition(Console.WindowWidth / 2 - 8, ConsoleConstants.ConsoleRowForPlayerIO);
+            Console.SetCursorPosition(Console.WindowWidth / 2 - errorMessage.Length / 2, ConsoleConstants.ConsoleRowForPlayerIO);
             Console.Write(errorMessage);
-            Thread.Sleep(1500);
+            Thread.Sleep(2000);
             ConsoleHelpers.ClearRow(ConsoleConstants.ConsoleRowForPlayerIO);
         }
 
@@ -42,6 +43,8 @@
 
             var currentRowPrint = startRowPrint;
             var currentColPrint = startColPrint;
+
+            this.PrintBorder(startRowPrint, startColPrint, board.TotalRows, board.TotalCols);
 
             Console.BackgroundColor = ConsoleColor.White;
 
@@ -72,9 +75,6 @@
 
                     ConsoleHelpers.PrintFigure(figure, backgroudColor, currentRowPrint, currentColPrint);
 
-                    
-
-
                     counter++;
                 }
 
@@ -82,12 +82,63 @@
             }
         }
 
+
         public void RenderMainMenu()
         {
             ConsoleHelpers.SetCursorAtCenter(Logo.Length);
             Console.WriteLine(Logo);
 
             Thread.Sleep(1000);
+        }
+        private void PrintBorder(int startRowPrint, int startColPrint, int boardTotalRows, int boardTotalCols)
+        {
+            var start = startRowPrint + ConsoleConstants.CharacterPerRowPerFigure / 2;
+
+            for (int i = 0; i < boardTotalCols; i++)
+            {
+                Console.SetCursorPosition(start + i * ConsoleConstants.CharacterPerRowPerFigure, startColPrint - 1);
+                Console.Write((char)('A' + i));
+                Console.SetCursorPosition(start + i * ConsoleConstants.CharacterPerRowPerFigure, startColPrint + boardTotalRows * ConsoleConstants.CharacterPerRowPerFigure);
+                Console.Write((char)('A' + i));
+            }
+
+            start = startColPrint + ConsoleConstants.CharacterPerColPerFigure / 2;
+
+            for (int i = 0; i < boardTotalRows; i++)
+            {
+                Console.SetCursorPosition(startRowPrint - 1, start + i * ConsoleConstants.CharacterPerColPerFigure);
+                Console.Write(boardTotalRows - i);
+                Console.SetCursorPosition(startRowPrint + boardTotalCols * ConsoleConstants.CharacterPerColPerFigure, start + i * ConsoleConstants.CharacterPerColPerFigure);
+                Console.Write(boardTotalRows - i);
+            }
+
+            for (int i = startRowPrint - 2; i < startRowPrint + boardTotalRows * ConsoleConstants.CharacterPerRowPerFigure + 2; i++)
+            {
+                Console.BackgroundColor = DarkSquareConsoleColor;
+                Console.SetCursorPosition(i, startColPrint - 2);
+                Console.Write(" ");
+            }
+
+            for (int i = startRowPrint - 2; i < startRowPrint + boardTotalRows * ConsoleConstants.CharacterPerRowPerFigure + 2; i++)
+            {
+                Console.BackgroundColor = DarkSquareConsoleColor;
+                Console.SetCursorPosition(i, startColPrint + boardTotalRows * ConsoleConstants.CharacterPerRowPerFigure + 1);
+                Console.Write(" ");
+            }
+
+            for (int i = startColPrint - 2; i < startColPrint + boardTotalCols * ConsoleConstants.CharacterPerColPerFigure + 1; i++)
+            {
+                Console.BackgroundColor = DarkSquareConsoleColor;
+                Console.SetCursorPosition(startRowPrint + boardTotalRows * ConsoleConstants.CharacterPerRowPerFigure + 1, i);
+                Console.Write(" ");
+            }
+
+            for (int i = startColPrint - 2; i < startColPrint + boardTotalCols * ConsoleConstants.CharacterPerColPerFigure + 1; i++)
+            {
+                Console.BackgroundColor = DarkSquareConsoleColor;
+                Console.SetCursorPosition(startRowPrint - 2, i);
+                Console.Write(" ");
+            }
         }
     }
 }
