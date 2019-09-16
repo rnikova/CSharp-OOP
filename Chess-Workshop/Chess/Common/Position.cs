@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace Chess.Common
+﻿namespace Chess.Common
 {
+    using System;
+
     public struct Position
     {
         public static Position FromArrayCoordinates(int arrRow, int arrCol, int totalRows)

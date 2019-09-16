@@ -1,11 +1,11 @@
 ﻿namespace Chess.InputProviders
 {
-    using Chess.Common;
-    using Chess.Common.Concole;
-    using Chess.InputProviders.Contracts;
-    using Chess.Players;
     using System;
     using System.Collections.Generic;
+    using Chess.Common;
+    using Chess.Players;
+    using Chess.Common.Concole;
+    using Chess.InputProviders.Contracts;
 
     public class ConsoleInputProvider : IInputProvider
     {

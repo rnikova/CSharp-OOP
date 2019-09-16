@@ -1,9 +1,9 @@
 ﻿namespace Chess.Players
 {
-    using Chess.Common;
-    using Chess.Figures.Contracts;
     using System;
     using System.Collections.Generic;
+    using Chess.Common;
+    using Chess.Figures.Contracts;
 
     public class Player : IPlayer
     {

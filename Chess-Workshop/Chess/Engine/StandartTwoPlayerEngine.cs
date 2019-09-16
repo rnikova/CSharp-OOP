@@ -2,16 +2,16 @@
 {
     using System;
     using System.Collections.Generic;
+    using Chess.Board;
+    using Chess.Common;
     using Chess.Players;
     using Chess.Engine.Contracts;
-    using Chess.Engine.Initialization;
-    using Chess.Renderers.Contracts;
-    using Chess.InputProviders.Contracts;
-    using Chess.Common;
-    using Chess.Board;
     using Chess.Figures.Contracts;
+    using Chess.Renderers.Contracts;
     using Chess.Movements.Contracts;
     using Chess.Movements.Strategies;
+    using Chess.Engine.Initialization;
+    using Chess.InputProviders.Contracts;
 
     public class StandartTwoPlayerEngine : IChessEngine
     {
@@ -81,6 +81,11 @@
 
         }
 
+        public void WinnigConditions()
+        {
+            throw new System.NotImplementedException();
+        }
+
         private void CheckIfToPositionIsEmpty(IFigure figure, Position to)
         {
             var figureAtPosition = this.board.GetFigureAtPosition(to);
@@ -128,9 +133,5 @@
             return this.players[currentPlayerIndex];
         }
 
-        public void WinnigConditions()
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

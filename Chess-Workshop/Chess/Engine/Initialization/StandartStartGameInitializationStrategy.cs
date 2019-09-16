@@ -5,8 +5,8 @@
     using Chess.Board;
     using Chess.Common;
     using Chess.Figures;
-    using Chess.Figures.Contracts;
     using Chess.Players;
+    using Chess.Figures.Contracts;
 
     public class StandartStartGameInitializationStrategy : IGameInitializationStrategy
     {

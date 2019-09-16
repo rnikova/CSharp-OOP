@@ -2,12 +2,12 @@
 {
     using System;
     using Chess.Engine;
-    using Chess.Engine.Contracts;
-    using Chess.Engine.Initialization;
-    using Chess.InputProviders;
-    using Chess.InputProviders.Contracts;
     using Chess.Renderers;
+    using Chess.InputProviders;
+    using Chess.Engine.Contracts;
     using Chess.Renderers.Contracts;
+    using Chess.Engine.Initialization;
+    using Chess.InputProviders.Contracts;
 
     public static class ChessFacade
     {
